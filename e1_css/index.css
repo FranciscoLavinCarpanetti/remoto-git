@@ -1,0 +1,55 @@
+@import url(../reset_css/reset_erick.css);
+.contenedor {
+  background-color: aqua;
+  padding-top: 20px;
+  padding-left: 40px;
+  color: black;
+}
+.px {
+  padding-left: 60px;
+}
+.texto {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.borde {
+  border: 3px solid #000;
+}
+.tamaño {
+  width: 50vw;
+  height: 400px;
+  overflow: scroll;
+  font-family: Arial, sans-serif;
+  color: #333;
+  font: 1.2em;
+}
+#static {
+  position: static;
+}
+relative {
+  position: relative;
+  top: 10px;
+}
+#absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.fixed {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+}
+.stiky {
+    position: sticky;
+    top: 0%;
+}
+body {
+    background-image: url(../e2_imitar_web/image/logo_google.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
