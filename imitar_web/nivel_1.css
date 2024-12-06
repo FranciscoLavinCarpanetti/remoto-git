@@ -1,1 +1,5 @@
 @import url("../reset_css/reset_erick.css");
+body{
+    background-color: antiquewhite;
+    color: black;
+}
