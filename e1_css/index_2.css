@@ -1,0 +1,56 @@
+@import url(../reset_css/reset_erick.css);
+.inline-block {
+    display: inline-block;
+    margin: 5px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.none {
+    display: none;
+}
+.block-iline-block{
+    display: block ;
+    text-align: center;
+
+}
+.block-iline-hijos{
+display: inline-block;
+margin: 5px;
+padding: 10px;
+border: 1px solid #ccc;
+text-align: center;
+vertical-align: top;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+.class1{
+    background-color: blue;
+    width: 80px;
+    height: 20px;
+}
+.class2 {
+    background-color: red;
+    width: 15%;
+    height: 30%;
+}
+.class3 {
+    background-color: yellowgreen;
+    width: 36vw;
+    height: 30vh;
+}
+p::before {
+    content: "👉 ";
+    color: red;
+    font-weight: bold;
+  }
+
+  p::after {
+    content: " 🚀";
+    color: blue;
+    font-weight: bold;
+  }
