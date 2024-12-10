@@ -9,9 +9,18 @@
   <body>
     <!-- Inicio Contenido Header -->
     <header>
+         <!-- Inicio Contenido Aside -->
+    <aside>
+      <fieldset>
+        <figure>
+          <img src="./image/mailchimp_logo.png" alt="Logo de Mailchimp" />
+        </figure>
+      </fieldset>
+    </aside>
+    <!-- Fin Contenido Aside -->
       <nav>
         <h1>Welcome to Mailchimp</h1>
-        <p>
+        <p class="texto1">
           Find your people. Engage your customers. Build your brand. Do it all
           with Mailchimp`s Marketing Platform. Already have an account?
         </p>
@@ -22,27 +31,57 @@
       </nav>
     </header>
     <!-- Fin Contenido Header -->
-    <!-- Inicio Contenido Aside -->
-    <aside>
-      <fieldset>
-        <figure>
-          <img src="./image/mailchimp_logo.png" alt="Logo de Mailchimp" />
-        </figure>
-      </fieldset>
-    </aside>
-    <!-- Fin Contenido Aside -->
+ 
     <!-- Inicio Contenido Main -->
     <main>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email"/>
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username"/>
-      <label for="Passwrod">Password</label>
-      <input type="password" id="password" name="password"/>
+      <form action="recopilar">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          required
+        />
+      </form>
+      <div>
+        <ul>
+          <li>One lowercase character</li>
+          <li>One uppercase character</li>
+          <li>One number</li>
+          <li>One special charracter</li>
+          <li>8 character minumun</li>
+        </ul>
+      </div>
+      <form action="enviar">
+        <div>
+          <label for="enviar"></label>
+          <input type="submit" value="sign up" />
+        </div>
+      </form>
+      <div>
+        <form action="checkbox"></form>
+        <input type="checkbox" id="si" name="si" value="si" />
+        <p>
+          I don`t to receive emails about new Mailchimp products, best
+          practices, or special offers.
+        </p>
+      </div>
     </main>
     <!-- Fin Contenido Main -->
     <!-- Inicio Contenido Footer -->
-    <footer></footer>
+    <footer>
+      <div>
+        <p>
+          By clicking the "Sign Up" button, you are creating a Mailchimp
+          account, and you agree to Mailchimps Terms of Use and Privacy Policy
+        </p>
+      </div>
+    </footer>
     <!-- Fin Contenido Footer -->
   </body>
 </html>
