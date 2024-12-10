@@ -1,50 +1,37 @@
 @import url(../reset_css/reset_erick.css);
 body {
   background-color: antiquewhite;
+  gap: 20px;
 }
-fieldset {
-  background-color: aqua;
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  color: white;
-  display: inline;
-}
-nav {
-  background-color: rgb(158, 204, 20);
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  color: white;
-  position: relative;
+header {
+  background-color: darkblue;
+  width: 100%;
+  height: 100px;
   display: flex;
 }
-main {
-  background-color: rgb(188, 143, 143);
-  border: 1px solid black;
+.div1 {
+  background-color: lightblue;
   width: 300px;
-  height: 300px;
-  color: white;
-  justify-content: center;
+  height: 200px;
+
 }
-div {
-  background-color: rgb(128, 128, 128);
-  border: 1px solid black;
-  width: 300px;
+figure {
+  background-color: aqua;
+  width: 250px;
   height: 300px;
-  color: white;
 }
-.form {
-  background-color: rgb(200, 14, 14);
-  border: 1px solid black;
-  width: 300px;
-  height: 300px;
-  color: white;
+form {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+}
+ul  li a {
+  background-color: green;
+  width: 150px;
+  height: 100px;
 }
 footer {
-  background-color: rgb(102, 153, 153);
-  border: 1px solid black;
-  width: 400px;
+  background-color: green;
+  width: 250px;
   height: 200px;
-  color: white;
 }
