@@ -1,0 +1,135 @@
+@import url(../reset_css/reset_erick.css);
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 50% 20%;
+  grid-template-rows: 100px 350px 200px 100px;
+  grid-template-areas:
+    "left header header"
+    "left main main"
+    "left main main"
+    "footer footer footer";
+}
+.header {
+  grid-area: header;
+  background-color: white;
+}
+
+.aside-left {
+  grid-area: left;
+  background-color: white;
+}
+
+.main {
+  grid-area: main;
+  background-color: white;
+  display: flow-root;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: black;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color:white;
+  padding: 10px;
+  padding-bottom: px%;
+}
+
+.h1 {
+  text-align: left;
+  font-size: 5em;
+  margin: 52px;
+  padding: 4px;
+  color: black;
+}
+.p {
+  text-align: left;
+  font-size: 3em;
+  margin: 52px;
+  padding: 4px;
+  color: black;
+}
+.logo {
+  margin: 3px;
+  padding: 3px;
+  padding-left: 2px;
+}
+main {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 100px;
+  padding-top: 0px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.password-requirements {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.password-requirements li {
+  padding: 5px 0;
+}
+
+.footer1 {
+padding: 100px;
+padding-bottom: 0px;
+text-align: center;
+
+}

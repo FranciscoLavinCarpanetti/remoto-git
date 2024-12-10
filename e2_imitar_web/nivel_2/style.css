@@ -1,0 +1,29 @@
+@import url(../reset_css/reset_erick.css);
+body {
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 230px 100px;
+}
+div {
+    background-color: lightblue;
+    width: 800px;
+    height: 350px;
+    display: inline-block;
+
+}
+p {
+    width: 100vw;
+}
+h1 {
+    color: black;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+}
