@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>variables root html</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 20px;
+      }
+      :root {
+        --colorprincipal: tomato;
+        --fontside: 1rem;
+        --font: 
+      }
+      .color {
+        color: var(--colorprincipal);
+      }
+      .colortitulo {
+        color: white;
+        background-color: var(--colorprincipal);
+      }
+      .texto {
+        font-size: 30px;
+      }
+      .fs-30 {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="texto color">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, hic!
+    </p>
+    <section>
+      <h3 class="texto colortitulo"></h3>
+      <p class="fs-30">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, sed!
+      </p>
+    </section>
+  </body>
+</html>
