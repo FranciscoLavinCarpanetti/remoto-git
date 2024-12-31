@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ejercicio-17</title>
+  </head>
+  <body>
+    <h1>Generador de Cuadrados de Colores Alternos</h1>
+    <label for="numero">Número de cuadrados:</label>
+    <input type="number" id="numero" />
+    <br />
+    <label for="lado">Lado de cada cuadrado (px):</label>
+    <input type="number" id="lado" />
+    <br />
+    <label for="colorInicial">Color inicial:</label>
+    <input type="color" id="colorInicial" />
+    <br />
+    <label for="orientacion">Orientación:</label>
+    <select id="orientacion">
+      <option value="fila">Fila</option>
+      <option value="columna">Columna</option>
+    </select>
+    <br />
+    <button onclick="generarCuadrados()">Generar Cuadrados</button>
+    <div id="resultado"></div>
+
+    <script src="./ej-17.js"></script>
+  </body>
+</html>

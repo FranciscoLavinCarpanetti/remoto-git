@@ -1,0 +1,10 @@
+.cuadrado {
+  display: inline-block;
+  margin: 2px;
+}
+.fila {
+  display: flex;
+}
+.columna {
+  display: block;
+}
