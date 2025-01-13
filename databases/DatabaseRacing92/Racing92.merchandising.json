@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "67838fde7603194dc0137031"
+  },
+  "producto": "Camiseta oficial",
+  "precio": 40,
+  "stock": 100
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137032"
+  },
+  "producto": "Pantalón de entrenamiento",
+  "precio": 30,
+  "stock": 50
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137033"
+  },
+  "producto": "Pelota oficial",
+  "precio": 25,
+  "stock": 75
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137034"
+  },
+  "producto": "Gorra Racing92",
+  "precio": 15,
+  "stock": 120
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137035"
+  },
+  "producto": "Taza Racing92",
+  "precio": 10,
+  "stock": 200
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137036"
+  },
+  "producto": "Bufanda Racing92",
+  "precio": 20,
+  "stock": 60
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137037"
+  },
+  "producto": "Bolso deportivo",
+  "precio": 50,
+  "stock": 30
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137038"
+  },
+  "producto": "Medias de entrenamiento",
+  "precio": 10,
+  "stock": 90
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc0137039"
+  },
+  "producto": "Chaqueta oficial",
+  "precio": 60,
+  "stock": 40
+},
+{
+  "_id": {
+    "$oid": "67838fde7603194dc013703a"
+  },
+  "producto": "Llaveros Racing92",
+  "precio": 5,
+  "stock": 300
+}]

@@ -1,0 +1,165 @@
+mysql> SELECT * FROM pedidos WHERE DireccionEnvio = 'Calle Falsa 123';
++-----------+-----------+---------------------+---------+--------+-----------------+
+| IdPedidos | IdDNI     | Fecha               | Estado  | Total  | DireccionEnvio  |
++-----------+-----------+---------------------+---------+--------+-----------------+
+|        41 | 12345678A | 2023-10-01 10:00:00 | Enviado | 299.99 | Calle Falsa 123 |
++-----------+-----------+---------------------+---------+--------+-----------------+
+1 row in set (0,00 sec)
+
+mysql> SELECT * FROM producto WHERE Precio > 100;
++------------+------------------------+--------+------------+----------+
+| IdProducto | Nombre                 | Precio | Inventario | Cantidad |
++------------+------------------------+--------+------------+----------+
+|          1 | Lavadora LG            | 299.99 |          1 |       10 |
+|          2 | Televisor Samsung      | 499.99 |          1 |        5 |
+|          3 | Refrigerador Whirlpool | 699.99 |          1 |        3 |
+|          5 | Aspiradora Dyson       | 199.99 |          1 |        7 |
+|          6 | Cafetera Nespresso     | 149.99 |          1 |       12 |
+|          8 | Horno Teka             | 399.99 |          1 |        4 |
+|         10 | Secadora Bosch         | 499.99 |          1 |        6 |
+|         13 | Tablet Apple           | 329.99 |          1 |        8 |
+|         14 | Smartphone Xiaomi      | 199.99 |          1 |       10 |
+|         15 | Laptop HP              | 799.99 |          1 |        5 |
+|         16 | Monitor Dell           | 179.99 |          1 |        9 |
+|         18 | Cámara Nikon           | 499.99 |          1 |        7 |
+|         19 | Consola Sony           | 399.99 |          1 |        4 |
++------------+------------------------+--------+------------+----------+
+13 rows in set (0,01 sec)
+
+mysql> SELECT cliente.Nombre, cliente.Apellidos, pedidos.Estado
+    -> FROM cliente
+    -> JOIN pedidos ON cliente.IdDNI = pedidos.IdDNI
+    -> WHERE pedidos.Estado = 'Pendiente';
++----------+------------+-----------+
+| Nombre   | Apellidos  | Estado    |
++----------+------------+-----------+
+| María    | García     | Pendiente |
+| Ana      | Martínez   | Pendiente |
+| Laura    | González   | Pendiente |
+| Elena    | Fernández  | Pendiente |
+| Sara     | Ramírez    | Pendiente |
+| Marta    | Flores     | Pendiente |
+| Patricia | Moreno     | Pendiente |
+| Isabel   | Cruz       | Pendiente |
+| Carmen   | Ramos      | Pendiente |
+| Lucía    | Molina     | Pendiente |
+| María    | García     | Pendiente |
+| Ana      | Martínez   | Pendiente |
+| Laura    | González   | Pendiente |
+| Elena    | Fernández  | Pendiente |
+| Sara     | Ramírez    | Pendiente |
+| Marta    | Flores     | Pendiente |
+| Patricia | Moreno     | Pendiente |
+| Isabel   | Cruz       | Pendiente |
+| Carmen   | Ramos      | Pendiente |
+| Lucía    | Molina     | Pendiente |
++----------+------------+-----------+
+20 rows in set (0,00 sec)
+
+mysql> SELECT producto.Nombre AS Producto, categoria.Nombre AS Categoria
+    -> FROM producto
+    -> JOIN categoria ON producto.IdProducto = categoria.IdCategoria;
++------------------------+--------------+
+| Producto               | Categoria    |
++------------------------+--------------+
+| Lavadora LG            | Lavadora     |
+| Televisor Samsung      | Televisor    |
+| Refrigerador Whirlpool | Refrigerador |
+| Microondas Panasonic   | Microondas   |
+| Aspiradora Dyson       | Aspiradora   |
+| Cafetera Nespresso     | Cafetera     |
+| Licuadora Oster        | Licuadora    |
+| Horno Teka             | Horno        |
+| Plancha Philips        | Plancha      |
+| Secadora Bosch         | Secadora     |
+| Ventilador Rowenta     | Ventilador   |
+| Calefactor DeLonghi    | Calefactor   |
+| Tablet Apple           | Tablet       |
+| Smartphone Xiaomi      | Smartphone   |
+| Laptop HP              | Laptop       |
+| Monitor Dell           | Monitor      |
+| Impresora Canon        | Impresora    |
+| Cámara Nikon           | Cámara       |
+| Consola Sony           | Consola      |
+| Router TP-Link         | Router       |
++------------------------+--------------+
+20 rows in set (0,00 sec)
+
+mysql> SELECT cliente.Nombre, cliente.Apellidos, COUNT(pedidos.IdPedidos) AS TotalPedidos, SUM(pedidos.Total) AS TotalGastado
+    -> FROM cliente
+    -> JOIN pedidos ON cliente.IdDNI = pedidos.IdDNI
+    -> GROUP BY cliente.IdDNI;
++----------+------------+--------------+--------------+
+| Nombre   | Apellidos  | TotalPedidos | TotalGastado |
++----------+------------+--------------+--------------+
+| Sara     | Ramírez    |            2 |       999.98 |
+| Lucía    | Molina     |            2 |        59.98 |
+| David    | Torres     |            2 |        79.98 |
+| Juan     | Pérez      |            2 |       599.98 |
+| Marta    | Flores     |            2 |       119.98 |
+| María    | García     |            2 |       999.98 |
+| Jorge    | Díaz       |            2 |       659.98 |
+| Pedro    | López      |            2 |      1399.98 |
+| Patricia | Moreno     |            2 |       399.98 |
+| Ana      | Martínez   |            2 |       199.98 |
+| Alberto  | Ortiz      |            2 |      1599.98 |
+| Luis     | Hernández  |            2 |       399.98 |
+| Isabel   | Cruz       |            2 |       359.98 |
+| Laura    | González   |            2 |       299.98 |
+| Ricardo  | Vega       |            2 |       179.98 |
+| Carlos   | Rodríguez  |            2 |       179.98 |
+| Carmen   | Ramos      |            2 |       999.98 |
+| Elena    | Fernández  |            2 |       799.98 |
+| Miguel   | Sánchez    |            2 |        99.98 |
+| Fernando | Gil        |            2 |       799.98 |
++----------+------------+--------------+--------------+
+20 rows in set (0,01 sec)
+
+mysql> SELECT producto.Nombre, SUM(PedidosProducto.Cantidad) AS TotalComprado
+    -> FROM producto
+    -> JOIN PedidosProducto ON producto.IdProducto = PedidosProducto.IdProducto
+    -> GROUP BY producto.IdProducto
+    -> ORDER BY TotalComprado DESC
+    -> LIMIT 5;
++------------------------+---------------+
+| Nombre                 | TotalComprado |
++------------------------+---------------+
+| Lavadora LG            |             1 |
+| Televisor Samsung      |             1 |
+| Refrigerador Whirlpool |             1 |
+| Microondas Panasonic   |             1 |
+| Aspiradora Dyson       |             1 |
++------------------------+---------------+
+5 rows in set (0,00 sec)
+
+mysql> SELECT producto.Nombre, comentarios.Comentario, comentarios.Calificacion
+    -> FROM producto
+    -> JOIN comentarios ON producto.IdProducto = comentarios.IdProducto
+    -> WHERE comentarios.Calificacion = 5;
++------------------------+------------------------+--------------+
+| Nombre                 | Comentario             | Calificacion |
++------------------------+------------------------+--------------+
+| Lavadora LG            | Muy buena lavadora     |            5 |
+| Refrigerador Whirlpool | Refrigerador espacioso |            5 |
+| Aspiradora Dyson       | Aspiradora potente     |            5 |
+| Licuadora Oster        | Licuadora eficiente    |            5 |
+| Plancha Philips        | Plancha ligera         |            5 |
+| Ventilador Rowenta     | Ventilador silencioso  |            5 |
+| Tablet Apple           | Tablet rápida          |            5 |
+| Laptop HP              | Laptop potente         |            5 |
+| Impresora Canon        | Impresora rápida       |            5 |
+| Consola Sony           | Consola divertida      |            5 |
++------------------------+------------------------+--------------+
+10 rows in set (0,00 sec)
+
+mysql> SELECT Estado, COUNT(IdPedidos) AS CantidadPedidos
+    -> FROM pedidos
+    -> GROUP BY Estado;
++-----------+-----------------+
+| Estado    | CantidadPedidos |
++-----------+-----------------+
+| Enviado   |              20 |
+| Pendiente |              20 |
++-----------+-----------------+
+2 rows in set (0,00 sec)
+

@@ -1,0 +1,202 @@
+-- MySQL dump 10.13  Distrib 8.4.3, for macos14 (x86_64)
+--
+-- Host: localhost    Database: ElectroHub
+-- ------------------------------------------------------
+-- Server version	8.4.3
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `categoria`
+--
+
+DROP TABLE IF EXISTS `categoria`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `categoria` (
+  `IdCategoria` int NOT NULL AUTO_INCREMENT,
+  `Nombre` varchar(50) NOT NULL,
+  `Categoria` varchar(50) DEFAULT NULL,
+  `TipoConsumo` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`IdCategoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `categoria`
+--
+
+LOCK TABLES `categoria` WRITE;
+/*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
+INSERT INTO `categoria` VALUES (1,'Lavadora','Electrodoméstico','A++'),(2,'Televisor','Electrónica','A+'),(3,'Refrigerador','Electrodoméstico','A++'),(4,'Microondas','Electrodoméstico','A'),(5,'Aspiradora','Electrodoméstico','A+'),(6,'Cafetera','Electrodoméstico','A'),(7,'Licuadora','Electrodoméstico','A+'),(8,'Horno','Electrodoméstico','A'),(9,'Plancha','Electrodoméstico','A+'),(10,'Secadora','Electrodoméstico','A++'),(11,'Ventilador','Electrodoméstico','A'),(12,'Calefactor','Electrodoméstico','A+'),(13,'Tablet','Electrónica','A'),(14,'Smartphone','Electrónica','A+'),(15,'Laptop','Electrónica','A'),(16,'Monitor','Electrónica','A+'),(17,'Impresora','Electrónica','A'),(18,'Cámara','Electrónica','A+'),(19,'Consola','Electrónica','A'),(20,'Router','Electrónica','A+');
+/*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cliente`
+--
+
+DROP TABLE IF EXISTS `cliente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `cliente` (
+  `IdDNI` varchar(20) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
+  `Apellidos` varchar(50) DEFAULT NULL,
+  `Email` varchar(100) DEFAULT NULL,
+  `Direccion` varchar(100) DEFAULT NULL,
+  `Telefono` varchar(15) NOT NULL,
+  PRIMARY KEY (`IdDNI`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cliente`
+--
+
+LOCK TABLES `cliente` WRITE;
+/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
+INSERT INTO `cliente` VALUES ('01234567J','Sara','Ramírez','sara.ramirez@example.com','Calle Valle 606','600012345'),('01234567T','Lucía','Molina','lucia.molina@example.com','Calle Paseo 1616','600012346'),('11234567K','David','Torres','david.torres@example.com','Calle Bosque 707','600112345'),('12345678A','Juan','Pérez','juan.perez@example.com','Calle Falsa 123','600123456'),('21234567L','Marta','Flores','marta.flores@example.com','Calle Jardín 808','600212345'),('23456789B','María','García','maria.garcia@example.com','Avenida Siempre Viva 742','600234567'),('31234567M','Jorge','Díaz','jorge.diaz@example.com','Calle Parque 909','600312345'),('34567890C','Pedro','López','pedro.lopez@example.com','Calle Luna 456','600345678'),('41234567N','Patricia','Moreno','patricia.moreno@example.com','Calle Plaza 1010','600412345'),('45678901D','Ana','Martínez','ana.martinez@example.com','Calle Sol 789','600456789'),('51234567O','Alberto','Ortiz','alberto.ortiz@example.com','Calle Camino 1111','600512345'),('56789012E','Luis','Hernández','luis.hernandez@example.com','Calle Estrella 101','600567890'),('61234567P','Isabel','Cruz','isabel.cruz@example.com','Calle Sendero 1212','600612345'),('67890123F','Laura','González','laura.gonzalez@example.com','Calle Mar 202','600678901'),('71234567Q','Ricardo','Vega','ricardo.vega@example.com','Calle Vereda 1313','600712345'),('78901234G','Carlos','Rodríguez','carlos.rodriguez@example.com','Calle Río 303','600789012'),('81234567R','Carmen','Ramos','carmen.ramos@example.com','Calle Avenida 1414','600812345'),('89012345H','Elena','Fernández','elena.fernandez@example.com','Calle Lago 404','600890123'),('90123456I','Miguel','Sánchez','miguel.sanchez@example.com','Calle Montaña 505','600901234'),('91234567S','Fernando','Gil','fernando.gil@example.com','Calle Boulevard 1515','600912345');
+/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `comentarios`
+--
+
+DROP TABLE IF EXISTS `comentarios`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `comentarios` (
+  `IdComentario` int NOT NULL AUTO_INCREMENT,
+  `IdDNI` varchar(20) DEFAULT NULL,
+  `IdProducto` int DEFAULT NULL,
+  `Fecha` datetime NOT NULL,
+  `Comentario` text,
+  `Calificacion` int DEFAULT NULL,
+  PRIMARY KEY (`IdComentario`),
+  KEY `IdDNI` (`IdDNI`),
+  KEY `IdProducto` (`IdProducto`),
+  CONSTRAINT `comentarios_ibfk_1` FOREIGN KEY (`IdDNI`) REFERENCES `cliente` (`IdDNI`),
+  CONSTRAINT `comentarios_ibfk_2` FOREIGN KEY (`IdProducto`) REFERENCES `producto` (`IdProducto`),
+  CONSTRAINT `comentarios_chk_1` CHECK ((`Calificacion` between 1 and 5))
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `comentarios`
+--
+
+LOCK TABLES `comentarios` WRITE;
+/*!40000 ALTER TABLE `comentarios` DISABLE KEYS */;
+INSERT INTO `comentarios` VALUES (1,'12345678A',1,'2023-10-01 12:00:00','Muy buena lavadora',5),(2,'23456789B',2,'2023-10-02 13:00:00','Excelente televisor',4),(3,'34567890C',3,'2023-10-03 14:00:00','Refrigerador espacioso',5),(4,'45678901D',4,'2023-10-04 15:00:00','Microondas rápido',4),(5,'56789012E',5,'2023-10-05 16:00:00','Aspiradora potente',5),(6,'67890123F',6,'2023-10-06 17:00:00','Cafetera práctica',4),(7,'78901234G',7,'2023-10-07 18:00:00','Licuadora eficiente',5),(8,'89012345H',8,'2023-10-08 19:00:00','Horno de calidad',4),(9,'90123456I',9,'2023-10-09 20:00:00','Plancha ligera',5),(10,'01234567J',10,'2023-10-10 21:00:00','Secadora rápida',4),(11,'11234567K',11,'2023-10-11 22:00:00','Ventilador silencioso',5),(12,'21234567L',12,'2023-10-12 23:00:00','Calefactor eficiente',4),(13,'31234567M',13,'2023-10-13 10:00:00','Tablet rápida',5),(14,'41234567N',14,'2023-10-14 11:00:00','Smartphone económico',4),(15,'51234567O',15,'2023-10-15 12:00:00','Laptop potente',5),(16,'61234567P',16,'2023-10-16 13:00:00','Monitor claro',4),(17,'71234567Q',17,'2023-10-17 14:00:00','Impresora rápida',5),(18,'81234567R',18,'2023-10-18 15:00:00','Cámara profesional',4),(19,'91234567S',19,'2023-10-19 16:00:00','Consola divertida',5),(20,'01234567T',20,'2023-10-20 17:00:00','Router confiable',4);
+/*!40000 ALTER TABLE `comentarios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pedidos`
+--
+
+DROP TABLE IF EXISTS `pedidos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pedidos` (
+  `IdPedidos` int NOT NULL AUTO_INCREMENT,
+  `IdDNI` varchar(20) DEFAULT NULL,
+  `Fecha` datetime NOT NULL,
+  `Estado` varchar(50) DEFAULT NULL,
+  `Total` decimal(10,2) DEFAULT NULL,
+  `DireccionEnvio` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`IdPedidos`),
+  KEY `IdDNI` (`IdDNI`),
+  CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`IdDNI`) REFERENCES `cliente` (`IdDNI`)
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pedidos`
+--
+
+LOCK TABLES `pedidos` WRITE;
+/*!40000 ALTER TABLE `pedidos` DISABLE KEYS */;
+INSERT INTO `pedidos` VALUES (21,'12345678A','2023-10-01 10:00:00','Enviado',299.99,NULL),(22,'23456789B','2023-10-02 11:00:00','Pendiente',499.99,NULL),(23,'34567890C','2023-10-03 12:00:00','Enviado',699.99,NULL),(24,'45678901D','2023-10-04 13:00:00','Pendiente',99.99,NULL),(25,'56789012E','2023-10-05 14:00:00','Enviado',199.99,NULL),(26,'67890123F','2023-10-06 15:00:00','Pendiente',149.99,NULL),(27,'78901234G','2023-10-07 16:00:00','Enviado',89.99,NULL),(28,'89012345H','2023-10-08 17:00:00','Pendiente',399.99,NULL),(29,'90123456I','2023-10-09 18:00:00','Enviado',49.99,NULL),(30,'01234567J','2023-10-10 19:00:00','Pendiente',499.99,NULL),(31,'11234567K','2023-10-11 20:00:00','Enviado',39.99,NULL),(32,'21234567L','2023-10-12 21:00:00','Pendiente',59.99,NULL),(33,'31234567M','2023-10-13 22:00:00','Enviado',329.99,NULL),(34,'41234567N','2023-10-14 23:00:00','Pendiente',199.99,NULL),(35,'51234567O','2023-10-15 10:00:00','Enviado',799.99,NULL),(36,'61234567P','2023-10-16 11:00:00','Pendiente',179.99,NULL),(37,'71234567Q','2023-10-17 12:00:00','Enviado',89.99,NULL),(38,'81234567R','2023-10-18 13:00:00','Pendiente',499.99,NULL),(39,'91234567S','2023-10-19 14:00:00','Enviado',399.99,NULL),(40,'01234567T','2023-10-20 15:00:00','Pendiente',29.99,NULL),(41,'12345678A','2023-10-01 10:00:00','Enviado',299.99,'Calle Falsa 123'),(42,'23456789B','2023-10-02 11:00:00','Pendiente',499.99,'Avenida Siempre Viva 742'),(43,'34567890C','2023-10-03 12:00:00','Enviado',699.99,'Calle Luna 456'),(44,'45678901D','2023-10-04 13:00:00','Pendiente',99.99,'Calle Sol 789'),(45,'56789012E','2023-10-05 14:00:00','Enviado',199.99,'Calle Estrella 101'),(46,'67890123F','2023-10-06 15:00:00','Pendiente',149.99,'Calle Mar 202'),(47,'78901234G','2023-10-07 16:00:00','Enviado',89.99,'Calle Río 303'),(48,'89012345H','2023-10-08 17:00:00','Pendiente',399.99,'Calle Lago 404'),(49,'90123456I','2023-10-09 18:00:00','Enviado',49.99,'Calle Montaña 505'),(50,'01234567J','2023-10-10 19:00:00','Pendiente',499.99,'Calle Valle 606'),(51,'11234567K','2023-10-11 20:00:00','Enviado',39.99,'Calle Bosque 707'),(52,'21234567L','2023-10-12 21:00:00','Pendiente',59.99,'Calle Jardín 808'),(53,'31234567M','2023-10-13 22:00:00','Enviado',329.99,'Calle Parque 909'),(54,'41234567N','2023-10-14 23:00:00','Pendiente',199.99,'Calle Plaza 1010'),(55,'51234567O','2023-10-15 10:00:00','Enviado',799.99,'Calle Camino 1111'),(56,'61234567P','2023-10-16 11:00:00','Pendiente',179.99,'Calle Sendero 1212'),(57,'71234567Q','2023-10-17 12:00:00','Enviado',89.99,'Calle Vereda 1313'),(58,'81234567R','2023-10-18 13:00:00','Pendiente',499.99,'Calle Avenida 1414'),(59,'91234567S','2023-10-19 14:00:00','Enviado',399.99,'Calle Boulevard 1515'),(60,'01234567T','2023-10-20 15:00:00','Pendiente',29.99,'Calle Paseo 1616');
+/*!40000 ALTER TABLE `pedidos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `PedidosProducto`
+--
+
+DROP TABLE IF EXISTS `PedidosProducto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `PedidosProducto` (
+  `IdPedidosProductos` int NOT NULL AUTO_INCREMENT,
+  `Cantidad` int NOT NULL,
+  `Subtotal` decimal(10,2) DEFAULT NULL,
+  `IdPedidos` int DEFAULT NULL,
+  `IdProducto` int DEFAULT NULL,
+  PRIMARY KEY (`IdPedidosProductos`),
+  KEY `IdPedidos` (`IdPedidos`),
+  KEY `IdProducto` (`IdProducto`),
+  CONSTRAINT `pedidosproducto_ibfk_1` FOREIGN KEY (`IdPedidos`) REFERENCES `pedidos` (`IdPedidos`),
+  CONSTRAINT `pedidosproducto_ibfk_2` FOREIGN KEY (`IdProducto`) REFERENCES `producto` (`IdProducto`)
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `PedidosProducto`
+--
+
+LOCK TABLES `PedidosProducto` WRITE;
+/*!40000 ALTER TABLE `PedidosProducto` DISABLE KEYS */;
+INSERT INTO `PedidosProducto` VALUES (41,1,299.99,21,1),(42,1,499.99,22,2),(43,1,699.99,23,3),(44,1,99.99,24,4),(45,1,199.99,25,5),(46,1,149.99,26,6),(47,1,89.99,27,7),(48,1,399.99,28,8),(49,1,49.99,29,9),(50,1,499.99,30,10),(51,1,39.99,31,11),(52,1,59.99,32,12),(53,1,329.99,33,13),(54,1,199.99,34,14),(55,1,799.99,35,15),(56,1,179.99,36,16),(57,1,89.99,37,17),(58,1,499.99,38,18),(59,1,399.99,39,19),(60,1,29.99,40,20);
+/*!40000 ALTER TABLE `PedidosProducto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `producto`
+--
+
+DROP TABLE IF EXISTS `producto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `producto` (
+  `IdProducto` int NOT NULL AUTO_INCREMENT,
+  `Nombre` varchar(50) NOT NULL,
+  `Precio` decimal(10,2) NOT NULL,
+  `Inventario` tinyint(1) NOT NULL,
+  `Cantidad` int NOT NULL,
+  PRIMARY KEY (`IdProducto`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `producto`
+--
+
+LOCK TABLES `producto` WRITE;
+/*!40000 ALTER TABLE `producto` DISABLE KEYS */;
+INSERT INTO `producto` VALUES (1,'Lavadora LG',299.99,1,10),(2,'Televisor Samsung',499.99,1,5),(3,'Refrigerador Whirlpool',699.99,1,3),(4,'Microondas Panasonic',99.99,1,15),(5,'Aspiradora Dyson',199.99,1,7),(6,'Cafetera Nespresso',149.99,1,12),(7,'Licuadora Oster',89.99,1,20),(8,'Horno Teka',399.99,1,4),(9,'Plancha Philips',49.99,1,25),(10,'Secadora Bosch',499.99,1,6),(11,'Ventilador Rowenta',39.99,1,30),(12,'Calefactor DeLonghi',59.99,1,18),(13,'Tablet Apple',329.99,1,8),(14,'Smartphone Xiaomi',199.99,1,10),(15,'Laptop HP',799.99,1,5),(16,'Monitor Dell',179.99,1,9),(17,'Impresora Canon',89.99,1,14),(18,'Cámara Nikon',499.99,1,7),(19,'Consola Sony',399.99,1,4),(20,'Router TP-Link',29.99,1,22);
+/*!40000 ALTER TABLE `producto` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-01-11 18:50:02

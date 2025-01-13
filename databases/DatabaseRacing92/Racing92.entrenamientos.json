@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "67838fd17603194dc0137022"
+  },
+  "tipo": "Físico",
+  "duración_minutos": 90,
+  "frecuencia": "Lunes, Miércoles, Viernes"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137023"
+  },
+  "tipo": "Táctico",
+  "duración_minutos": 60,
+  "frecuencia": "Martes, Jueves"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137024"
+  },
+  "tipo": "Velocidad",
+  "duración_minutos": 45,
+  "frecuencia": "Viernes"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137025"
+  },
+  "tipo": "Resistencia",
+  "duración_minutos": 75,
+  "frecuencia": "Miércoles"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137026"
+  },
+  "tipo": "Estrategia de juego",
+  "duración_minutos": 90,
+  "frecuencia": "Sábados"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137027"
+  },
+  "tipo": "Flexibilidad",
+  "duración_minutos": 30,
+  "frecuencia": "Martes"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137028"
+  },
+  "tipo": "Defensa",
+  "duración_minutos": 60,
+  "frecuencia": "Jueves"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137029"
+  },
+  "tipo": "Ataque",
+  "duración_minutos": 90,
+  "frecuencia": "Viernes"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc013702a"
+  },
+  "tipo": "Análisis de video",
+  "duración_minutos": 120,
+  "frecuencia": "Lunes"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc013702b"
+  },
+  "tipo": "Recuperación",
+  "duración_minutos": 30,
+  "frecuencia": "Domingo"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc013702c"
+  },
+  "tipo": "Pases",
+  "duración_minutos": 45,
+  "frecuencia": "Martes"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc013702d"
+  },
+  "tipo": "Scrum",
+  "duración_minutos": 60,
+  "frecuencia": "Jueves"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc013702e"
+  },
+  "tipo": "Lineout",
+  "duración_minutos": 45,
+  "frecuencia": "Viernes"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc013702f"
+  },
+  "tipo": "Cohesión grupal",
+  "duración_minutos": 60,
+  "frecuencia": "Sábados"
+},
+{
+  "_id": {
+    "$oid": "67838fd17603194dc0137030"
+  },
+  "tipo": "Técnica individual",
+  "duración_minutos": 90,
+  "frecuencia": "Lunes"
+}]

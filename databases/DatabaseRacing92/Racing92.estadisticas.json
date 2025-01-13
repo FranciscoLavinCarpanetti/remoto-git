@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "67838fc27603194dc0137013"
+  },
+  "jugador": "Juan Pérez",
+  "partidos_jugados": 20,
+  "tries": 15,
+  "puntos": 75,
+  "placajes": 120
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137014"
+  },
+  "jugador": "Carlos Gómez",
+  "partidos_jugados": 18,
+  "tries": 10,
+  "puntos": 50,
+  "placajes": 110
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137015"
+  },
+  "jugador": "Lucas Rodríguez",
+  "partidos_jugados": 22,
+  "tries": 12,
+  "puntos": 60,
+  "placajes": 125
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137016"
+  },
+  "jugador": "Matías Díaz",
+  "partidos_jugados": 25,
+  "tries": 8,
+  "puntos": 40,
+  "placajes": 100
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137017"
+  },
+  "jugador": "Diego López",
+  "partidos_jugados": 30,
+  "tries": 5,
+  "puntos": 25,
+  "placajes": 150
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137018"
+  },
+  "jugador": "Santiago Ruiz",
+  "partidos_jugados": 28,
+  "tries": 7,
+  "puntos": 35,
+  "placajes": 140
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137019"
+  },
+  "jugador": "Pedro Sánchez",
+  "partidos_jugados": 19,
+  "tries": 9,
+  "puntos": 45,
+  "placajes": 115
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc013701a"
+  },
+  "jugador": "Javier Torres",
+  "partidos_jugados": 21,
+  "tries": 14,
+  "puntos": 70,
+  "placajes": 130
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc013701b"
+  },
+  "jugador": "Martín Castro",
+  "partidos_jugados": 20,
+  "tries": 11,
+  "puntos": 55,
+  "placajes": 120
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc013701c"
+  },
+  "jugador": "Gabriel Muñoz",
+  "partidos_jugados": 18,
+  "tries": 9,
+  "puntos": 45,
+  "placajes": 100
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc013701d"
+  },
+  "jugador": "Fernando Vega",
+  "partidos_jugados": 25,
+  "tries": 6,
+  "puntos": 30,
+  "placajes": 140
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc013701e"
+  },
+  "jugador": "Leonardo Gómez",
+  "partidos_jugados": 26,
+  "tries": 7,
+  "puntos": 35,
+  "placajes": 135
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc013701f"
+  },
+  "jugador": "Emilio Rojas",
+  "partidos_jugados": 22,
+  "tries": 8,
+  "puntos": 40,
+  "placajes": 120
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137020"
+  },
+  "jugador": "Manuel Vázquez",
+  "partidos_jugados": 20,
+  "tries": 10,
+  "puntos": 50,
+  "placajes": 115
+},
+{
+  "_id": {
+    "$oid": "67838fc27603194dc0137021"
+  },
+  "jugador": "Felipe Herrera",
+  "partidos_jugados": 15,
+  "tries": 13,
+  "puntos": 65,
+  "placajes": 90
+}]

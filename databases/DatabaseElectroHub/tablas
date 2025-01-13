@@ -1,0 +1,48 @@
+CREATE TABLE cliente (
+    IdDNI VARCHAR(20) PRIMARY KEY,
+    Nombre VARCHAR(50) NOT NULL,
+    Apellidos VARCHAR(50),
+    Email VARCHAR(100),
+    Direccion VARCHAR(100),
+    Telefono VARCHAR(15) NOT NULL
+);
+CREATE TABLE categoria (
+    IdCategoria INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(50) NOT NULL,
+    Categoria VARCHAR(50),
+    TipoConsumo VARCHAR(50)
+);
+CREATE TABLE producto (
+    IdProducto INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(50) NOT NULL,
+    Precio DECIMAL(10, 2) NOT NULL,
+    Inventario BOOLEAN NOT NULL,
+    Cantidad INT NOT NULL
+);
+CREATE TABLE pedidos (
+    IdPedidos INT AUTO_INCREMENT PRIMARY KEY,
+    IdDNI VARCHAR(20),
+    Fecha DATETIME NOT NULL,
+    Estado VARCHAR(50),
+    Total DECIMAL(10, 2),
+    FOREIGN KEY (IdDNI) REFERENCES cliente(IdDNI)
+);
+CREATE TABLE PedidosProducto (
+    IdPedidosProductos INT AUTO_INCREMENT PRIMARY KEY,
+    Cantidad INT NOT NULL,
+    Subtotal DECIMAL(10, 2),
+    IdPedidos INT,
+    IdProducto INT,
+    FOREIGN KEY (IdPedidos) REFERENCES pedidos(IdPedidos),
+    FOREIGN KEY (IdProducto) REFERENCES producto(IdProducto)
+);
+CREATE TABLE comentarios (
+    IdComentario INT AUTO_INCREMENT PRIMARY KEY,
+    IdDNI VARCHAR(20),
+    IdProducto INT,
+    Fecha DATETIME NOT NULL,
+    Comentario TEXT,
+    Calificacion INT CHECK (Calificacion BETWEEN 1 AND 5),
+    FOREIGN KEY (IdDNI) REFERENCES cliente(IdDNI),
+    FOREIGN KEY (IdProducto) REFERENCES producto(IdProducto)
+);

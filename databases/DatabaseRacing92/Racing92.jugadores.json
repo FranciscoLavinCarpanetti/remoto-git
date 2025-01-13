@@ -1,0 +1,575 @@
+[{
+  "_id": {
+    "$oid": "6783924ad2a84eb6c83ce0c3"
+  },
+  "nombre": "Juan Pérez",
+  "edad": 28,
+  "posicion": "Ala",
+  "peso": 92,
+  "altura": 1.88,
+  "nacionalidad": "Argentina",
+  "direccion": {
+    "calle": "Av. Principal 123",
+    "ciudad": "París",
+    "código_postal": "75000",
+    "país": "Francia"
+  },
+  "contrato": {
+    "años_en_el_club": 5,
+    "tipo": "Profesional",
+    "duracion": "2025-2027",
+    "salario_anual": 55000.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "6783924ad2a84eb6c83ce0c4"
+  },
+  "nombre": "Pierre Dupont",
+  "edad": 31,
+  "posicion": "Medio Scrum",
+  "peso": 84,
+  "altura": 1.75,
+  "nacionalidad": "Francia",
+  "direccion": {
+    "calle": "Rue des Champs 45",
+    "ciudad": "París",
+    "código_postal": "75008",
+    "país": "Francia"
+  },
+  "contrato": {
+    "años_en_el_club": 8,
+    "tipo": "Profesional",
+    "duracion": "2025-2030",
+    "salario_anual": 82500
+  }
+},
+{
+  "_id": {
+    "$oid": "6783924ad2a84eb6c83ce0c5"
+  },
+  "nombre": "Liam O'Connor",
+  "edad": 24,
+  "posicion": "Pilar",
+  "peso": 110,
+  "altura": 1.85,
+  "nacionalidad": "Irlanda",
+  "direccion": {
+    "calle": "Green Road 78",
+    "ciudad": "Dublín",
+    "código_postal": "D02",
+    "país": "Irlanda"
+  },
+  "contrato": {
+    "años_en_el_club": 3,
+    "tipo": "Semi-profesional",
+    "duracion": "2025-2026",
+    "salario_anual": 35000
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0c6"
+  },
+  "nombre": "Sebastián Muñoz",
+  "edad": 26,
+  "posicion": "Centro",
+  "peso": 88,
+  "altura": 1.82,
+  "nacionalidad": "Chile",
+  "direccion": {
+    "calle": "Av. Los Andes 456",
+    "ciudad": "Santiago",
+    "código_postal": "8320000",
+    "país": "Chile"
+  },
+  "contrato": {
+    "años_en_el_club": 4,
+    "tipo": "Profesional",
+    "duracion": "2023-2026",
+    "salario_anual": 52800.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0c7"
+  },
+  "nombre": "Matías Fernández",
+  "edad": 29,
+  "posicion": "Fullback",
+  "peso": 90,
+  "altura": 1.86,
+  "nacionalidad": "Uruguay",
+  "direccion": {
+    "calle": "Calle Libertad 234",
+    "ciudad": "Montevideo",
+    "código_postal": "11000",
+    "país": "Uruguay"
+  },
+  "contrato": {
+    "años_en_el_club": 6,
+    "tipo": "Profesional",
+    "duracion": "2021-2027",
+    "salario_anual": 66000
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0c8"
+  },
+  "nombre": "James Smith",
+  "edad": 22,
+  "posicion": "Ala",
+  "peso": 87,
+  "altura": 1.83,
+  "nacionalidad": "Inglaterra",
+  "direccion": {
+    "calle": "Baker Street 221B",
+    "ciudad": "Londres",
+    "código_postal": "NW1",
+    "país": "Reino Unido"
+  },
+  "contrato": {
+    "años_en_el_club": 2,
+    "tipo": "Semi-profesional",
+    "duracion": "2024-2025",
+    "salario_anual": 30000
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0c9"
+  },
+  "nombre": "Nicolas Leclerc",
+  "edad": 33,
+  "posicion": "Medio Apertura",
+  "peso": 86,
+  "altura": 1.78,
+  "nacionalidad": "Francia",
+  "direccion": {
+    "calle": "Rue de Rivoli 789",
+    "ciudad": "París",
+    "código_postal": "75004",
+    "país": "Francia"
+  },
+  "contrato": {
+    "años_en_el_club": 10,
+    "tipo": "Profesional",
+    "duracion": "2015-2025",
+    "salario_anual": 88000
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0ca"
+  },
+  "nombre": "Lucas Martínez",
+  "edad": 25,
+  "posicion": "Pilar",
+  "peso": 115,
+  "altura": 1.92,
+  "nacionalidad": "Argentina",
+  "direccion": {
+    "calle": "Av. Córdoba 567",
+    "ciudad": "Buenos Aires",
+    "código_postal": "C1000",
+    "país": "Argentina"
+  },
+  "contrato": {
+    "años_en_el_club": 3,
+    "tipo": "Semi-profesional",
+    "duracion": "2023-2026",
+    "salario_anual": 40000
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0cb"
+  },
+  "nombre": "Tomás Gutiérrez",
+  "edad": 30,
+  "posicion": "Segunda Línea",
+  "peso": 112,
+  "altura": 1.96,
+  "nacionalidad": "España",
+  "direccion": {
+    "calle": "Calle Mayor 123",
+    "ciudad": "Madrid",
+    "código_postal": "28013",
+    "país": "España"
+  },
+  "contrato": {
+    "años_en_el_club": 7,
+    "tipo": "Profesional",
+    "duracion": "2018-2025",
+    "salario_anual": 71500
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0cc"
+  },
+  "nombre": "William Jones",
+  "edad": 28,
+  "posicion": "Hooker",
+  "peso": 108,
+  "altura": 1.82,
+  "nacionalidad": "Gales",
+  "direccion": {
+    "calle": "High Street 345",
+    "ciudad": "Cardiff",
+    "código_postal": "CF10",
+    "país": "Gales"
+  },
+  "contrato": {
+    "años_en_el_club": 5,
+    "tipo": "Profesional",
+    "duracion": "2020-2026",
+    "salario_anual": 57200.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0cd"
+  },
+  "nombre": "Enzo Moretti",
+  "edad": 27,
+  "posicion": "Tercera Línea",
+  "peso": 105,
+  "altura": 1.9,
+  "nacionalidad": "Italia",
+  "direccion": {
+    "calle": "Via Roma 456",
+    "ciudad": "Roma",
+    "código_postal": "00184",
+    "país": "Italia"
+  },
+  "contrato": {
+    "años_en_el_club": 4,
+    "tipo": "Profesional",
+    "duracion": "2022-2026",
+    "salario_anual": 51700.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0ce"
+  },
+  "nombre": "Hiroshi Tanaka",
+  "edad": 23,
+  "posicion": "Medio Scrum",
+  "peso": 82,
+  "altura": 1.76,
+  "nacionalidad": "Japón",
+  "direccion": {
+    "calle": "Shibuya 123",
+    "ciudad": "Tokio",
+    "código_postal": "150-0002",
+    "país": "Japón"
+  },
+  "contrato": {
+    "años_en_el_club": 2,
+    "tipo": "Semi-profesional",
+    "duracion": "2024-2025",
+    "salario_anual": 32000
+  }
+},
+{
+  "_id": {
+    "$oid": "6783929fd2a84eb6c83ce0cf"
+  },
+  "nombre": "Michael Brown",
+  "edad": 34,
+  "posicion": "Fullback",
+  "peso": 88,
+  "altura": 1.8,
+  "nacionalidad": "Nueva Zelanda",
+  "direccion": {
+    "calle": "Main Street 789",
+    "ciudad": "Auckland",
+    "código_postal": "1010",
+    "país": "Nueva Zelanda"
+  },
+  "contrato": {
+    "años_en_el_club": 12,
+    "tipo": "Profesional",
+    "duracion": "2013-2025",
+    "salario_anual": 99000.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d0"
+  },
+  "nombre": "Daniel Rodríguez",
+  "edad": 27,
+  "posicion": "Centro",
+  "peso": 92,
+  "altura": 1.85,
+  "nacionalidad": "Colombia",
+  "direccion": {
+    "calle": "Carrera 15 #34-67",
+    "ciudad": "Bogotá",
+    "código_postal": "110111",
+    "país": "Colombia"
+  },
+  "contrato": {
+    "años_en_el_club": 3,
+    "tipo": "Profesional",
+    "duracion": "2022-2025",
+    "salario_anual": 46200.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d1"
+  },
+  "nombre": "Andrés López",
+  "edad": 24,
+  "posicion": "Ala",
+  "peso": 85,
+  "altura": 1.8,
+  "nacionalidad": "México",
+  "direccion": {
+    "calle": "Calle Reforma 567",
+    "ciudad": "Ciudad de México",
+    "código_postal": "06600",
+    "país": "México"
+  },
+  "contrato": {
+    "años_en_el_club": 2,
+    "tipo": "Semi-profesional",
+    "duracion": "2024-2026",
+    "salario_anual": 28000
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d2"
+  },
+  "nombre": "Ethan Williams",
+  "edad": 29,
+  "posicion": "Segunda Línea",
+  "peso": 118,
+  "altura": 1.95,
+  "nacionalidad": "Australia",
+  "direccion": {
+    "calle": "George Street 456",
+    "ciudad": "Sídney",
+    "código_postal": "2000",
+    "país": "Australia"
+  },
+  "contrato": {
+    "años_en_el_club": 5,
+    "tipo": "Profesional",
+    "duracion": "2020-2025",
+    "salario_anual": 73700
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d3"
+  },
+  "nombre": "Jean-Luc Dupont",
+  "edad": 30,
+  "posicion": "Hooker",
+  "peso": 110,
+  "altura": 1.82,
+  "nacionalidad": "Francia",
+  "direccion": {
+    "calle": "Place de la Concorde 234",
+    "ciudad": "París",
+    "código_postal": "75008",
+    "país": "Francia"
+  },
+  "contrato": {
+    "años_en_el_club": 8,
+    "tipo": "Profesional",
+    "duracion": "2017-2025",
+    "salario_anual": 79200
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d4"
+  },
+  "nombre": "Owen Davis",
+  "edad": 32,
+  "posicion": "Fullback",
+  "peso": 92,
+  "altura": 1.87,
+  "nacionalidad": "Sudáfrica",
+  "direccion": {
+    "calle": "Nelson Mandela Street 789",
+    "ciudad": "Ciudad del Cabo",
+    "código_postal": "8001",
+    "país": "Sudáfrica"
+  },
+  "contrato": {
+    "años_en_el_club": 7,
+    "tipo": "Profesional",
+    "duracion": "2018-2025",
+    "salario_anual": 74800
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d5"
+  },
+  "nombre": "Carlos Sánchez",
+  "edad": 25,
+  "posicion": "Medio Apertura",
+  "peso": 90,
+  "altura": 1.83,
+  "nacionalidad": "Venezuela",
+  "direccion": {
+    "calle": "Calle Bolívar 321",
+    "ciudad": "Caracas",
+    "código_postal": "1010",
+    "país": "Venezuela"
+  },
+  "contrato": {
+    "años_en_el_club": 4,
+    "tipo": "Profesional",
+    "duracion": "2021-2025",
+    "salario_anual": 50600.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d6"
+  },
+  "nombre": "Pablo Gómez",
+  "edad": 26,
+  "posicion": "Tercera Línea",
+  "peso": 106,
+  "altura": 1.91,
+  "nacionalidad": "Uruguay",
+  "direccion": {
+    "calle": "18 de Julio 678",
+    "ciudad": "Montevideo",
+    "código_postal": "11200",
+    "país": "Uruguay"
+  },
+  "contrato": {
+    "años_en_el_club": 5,
+    "tipo": "Profesional",
+    "duracion": "2020-2025",
+    "salario_anual": 55000.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d7"
+  },
+  "nombre": "Takeshi Nakamura",
+  "edad": 23,
+  "posicion": "Medio Scrum",
+  "peso": 78,
+  "altura": 1.74,
+  "nacionalidad": "Japón",
+  "direccion": {
+    "calle": "Sakura Street 123",
+    "ciudad": "Osaka",
+    "código_postal": "530-0012",
+    "país": "Japón"
+  },
+  "contrato": {
+    "años_en_el_club": 3,
+    "tipo": "Semi-profesional",
+    "duracion": "2023-2026",
+    "salario_anual": 32000
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d8"
+  },
+  "nombre": "Diego Martínez",
+  "edad": 28,
+  "posicion": "Ala",
+  "peso": 89,
+  "altura": 1.84,
+  "nacionalidad": "España",
+  "direccion": {
+    "calle": "Gran Vía 234",
+    "ciudad": "Madrid",
+    "código_postal": "28013",
+    "país": "España"
+  },
+  "contrato": {
+    "años_en_el_club": 6,
+    "tipo": "Profesional",
+    "duracion": "2019-2025",
+    "salario_anual": 63800.00000000001
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0d9"
+  },
+  "nombre": "Oliver Johnson",
+  "edad": 31,
+  "posicion": "Pilar",
+  "peso": 115,
+  "altura": 1.93,
+  "nacionalidad": "Escocia",
+  "direccion": {
+    "calle": "Royal Mile 456",
+    "ciudad": "Edimburgo",
+    "código_postal": "EH1",
+    "país": "Reino Unido"
+  },
+  "contrato": {
+    "años_en_el_club": 7,
+    "tipo": "Profesional",
+    "duracion": "2018-2025",
+    "salario_anual": 79200
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0da"
+  },
+  "nombre": "Fernando Ribeiro",
+  "edad": 25,
+  "posicion": "Hooker",
+  "peso": 112,
+  "altura": 1.89,
+  "nacionalidad": "Portugal",
+  "direccion": {
+    "calle": "Rua da Liberdade 789",
+    "ciudad": "Lisboa",
+    "código_postal": "1250-001",
+    "país": "Portugal"
+  },
+  "contrato": {
+    "años_en_el_club": 3,
+    "tipo": "Profesional",
+    "duracion": "2023-2026",
+    "salario_anual": 44000
+  }
+},
+{
+  "_id": {
+    "$oid": "678394d9d2a84eb6c83ce0db"
+  },
+  "nombre": "Ryan Murphy",
+  "edad": 30,
+  "posicion": "Tercera Línea",
+  "peso": 108,
+  "altura": 1.92,
+  "nacionalidad": "Irlanda",
+  "direccion": {
+    "calle": "Dublin Road 123",
+    "ciudad": "Dublín",
+    "código_postal": "D04",
+    "país": "Irlanda"
+  },
+  "contrato": {
+    "años_en_el_club": 6,
+    "tipo": "Profesional",
+    "duracion": "2019-2025",
+    "salario_anual": 68200
+  }
+}]

@@ -1,0 +1,135 @@
+[{
+  "_id": {
+    "$oid": "678390617603194dc013703b"
+  },
+  "rival": "Toulouse",
+  "fecha": "2025-01-15",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc013703c"
+  },
+  "rival": "Clermont",
+  "fecha": "2025-01-22",
+  "lugar": "Estadio Clermont",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc013703d"
+  },
+  "rival": "La Rochelle",
+  "fecha": "2025-01-29",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc013703e"
+  },
+  "rival": "Stade Français",
+  "fecha": "2025-02-05",
+  "lugar": "Estadio Stade Français",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc013703f"
+  },
+  "rival": "Montpellier",
+  "fecha": "2025-02-12",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137040"
+  },
+  "rival": "Lyon",
+  "fecha": "2025-02-19",
+  "lugar": "Estadio Lyon",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137041"
+  },
+  "rival": "Bordeaux",
+  "fecha": "2025-02-26",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137042"
+  },
+  "rival": "Pau",
+  "fecha": "2025-03-05",
+  "lugar": "Estadio Pau",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137043"
+  },
+  "rival": "Bayonne",
+  "fecha": "2025-03-12",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137044"
+  },
+  "rival": "Castres",
+  "fecha": "2025-03-19",
+  "lugar": "Estadio Castres",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137045"
+  },
+  "rival": "Perpignan",
+  "fecha": "2025-03-26",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137046"
+  },
+  "rival": "Brive",
+  "fecha": "2025-04-02",
+  "lugar": "Estadio Brive",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137047"
+  },
+  "rival": "Grenoble",
+  "fecha": "2025-04-09",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137048"
+  },
+  "rival": "Toulon",
+  "fecha": "2025-04-16",
+  "lugar": "Estadio Toulon",
+  "resultado": null
+},
+{
+  "_id": {
+    "$oid": "678390617603194dc0137049"
+  },
+  "rival": "Agen",
+  "fecha": "2025-04-23",
+  "lugar": "Estadio Racing92",
+  "resultado": null
+}]

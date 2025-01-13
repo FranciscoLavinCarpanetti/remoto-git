@@ -1,0 +1,393 @@
+db.jugadores.find();// MUESTRA A TODOS LOS JUEGADORES//
+
+db.jugadores.find({}, { nombre: 1, posicion: 1, _id: 0 });
+{
+  nombre: 'Juan Pérez',
+  posicion: 'Ala'
+}
+{
+  nombre: 'Pierre Dupont',
+  posicion: 'Medio Scrum'
+}// MUESTRA A TODOS LOS JUEGADORES NOMBRE Y POSICION//
+
+db.jugadores.find({ nacionalidad: "Francia" });
+{
+    _id: ObjectId('6783924ad2a84eb6c83ce0c4'),
+    nombre: 'Pierre Dupont',
+    edad: 31,
+    posicion: 'Medio Scrum',
+    peso: 84,
+    altura: 1.75,
+    nacionalidad: 'Francia',
+    direccion: {
+      calle: 'Rue des Champs 45',
+      ciudad: 'París',
+      'código_postal': '75008',
+      'país': 'Francia'
+    },
+    contrato: {
+      'años_en_el_club': 8,
+      tipo: 'Profesional',
+      duracion: '2025-2030',
+      salario_anual: 75000
+    }
+  }//MUESTRA A TODOS LOS JUGADORES CON NACIONALIDAD FRANCESA//
+
+  db.jugadores.find({ peso: { $gt: 100 } });
+  {
+    _id: ObjectId('6783924ad2a84eb6c83ce0c5'),
+    nombre: "Liam O'Connor",
+    edad: 24,
+    posicion: 'Pilar',
+    peso: 110,
+    altura: 1.85,
+    nacionalidad: 'Irlanda',
+    direccion: {
+      calle: 'Green Road 78',
+      ciudad: 'Dublín',
+      'código_postal': 'D02',
+      'país': 'Irlanda'
+    },
+    contrato: {
+      'años_en_el_club': 3,
+      tipo: 'Semi-profesional',
+      duracion: '2025-2026',
+      salario_anual: 35000
+    }
+  } //MUESTRA A TODOS LOS JUGADORES CON PESO SUPERIOR A 100KG//
+
+  db.jugadores.find({ "contrato.salario_anual": { $gt: 50000, $lt: 70000 } });
+  {
+    _id: ObjectId('6783929fd2a84eb6c83ce0c7'),
+    nombre: 'Matías Fernández',
+    edad: 29,
+    posicion: 'Fullback',
+    peso: 90,
+    altura: 1.86,
+    nacionalidad: 'Uruguay',
+    direccion: {
+      calle: 'Calle Libertad 234',
+      ciudad: 'Montevideo',
+      'código_postal': '11000',
+      'país': 'Uruguay'
+    },
+    contrato: {
+      'años_en_el_club': 6,
+      tipo: 'Profesional',
+      duracion: '2021-2027',
+      salario_anual: 60000
+    }
+  }//MUESTRA A TODOS LOS JUGADORES CUYO SALARIO ANUAL ES > A 50.000€ Y MENOS A 70.000€//
+
+  db.jugadores.find({ "contrato.años_en_el_club": { $gt: 5 } });
+  {
+    _id: ObjectId('6783924ad2a84eb6c83ce0c4'),
+    nombre: 'Pierre Dupont',
+    edad: 31,
+    posicion: 'Medio Scrum',
+    peso: 84,
+    altura: 1.75,
+    nacionalidad: 'Francia',
+    direccion: {
+      calle: 'Rue des Champs 45',
+      ciudad: 'París',
+      'código_postal': '75008',
+      'país': 'Francia'
+    },
+    contrato: {
+      'años_en_el_club': 8,
+      tipo: 'Profesional',
+      duracion: '2025-2030',
+      salario_anual: 75000
+    }
+  } //MUESTRA A TODOS LOS JUGADORES QUE LLEVAN MAS DE 5 AÑOS EN EL CLUB//
+
+  db.jugadores.find({ posicion: { $in: ["Ala", "Pilar"] } });
+  {
+  _id: ObjectId('6783924ad2a84eb6c83ce0c3'),
+  nombre: 'Juan Pérez',
+  edad: 28,
+  posicion: 'Ala',
+  peso: 92,
+  altura: 1.88,
+  nacionalidad: 'Argentina',
+  direccion: {
+    calle: 'Av. Principal 123',
+    ciudad: 'París',
+    'código_postal': '75000',
+    'país': 'Francia'
+  },
+  contrato: {
+    'años_en_el_club': 5,
+    tipo: 'Profesional',
+    duracion: '2025-2027',
+    salario_anual: 50000
+  }
+  }//MUESTRA A TODOS LOS JUGADORES QUE OCUPAN LA POSISION DE PILAR//
+
+  db.jugadores.find({ "direccion.ciudad": "París" });
+  db.jugadores.countDocuments({ "contrato.tipo": "Profesional" });
+
+  {
+    _id: ObjectId('6783924ad2a84eb6c83ce0c3'),
+    nombre: 'Juan Pérez',
+    edad: 28,
+    posicion: 'Ala',
+    peso: 92,
+    altura: 1.88,
+    nacionalidad: 'Argentina',
+    direccion: {
+      calle: 'Av. Principal 123',
+      ciudad: 'París',
+      'código_postal': '75000',
+      'país': 'Francia'
+    },
+    contrato: {
+      'años_en_el_club': 5,
+      tipo: 'Profesional',
+      duracion: '2025-2027',
+      salario_anual: 50000
+    }
+  }//MUESTRA A TODOS LOS JUGADORES QUE VIVEN EN PARIS Y TIENEN CONTRATO PROFESIONAL//
+
+  db.jugadores.find({ nombre: { $regex: "^[JP]", $options: "i" } });
+  {
+  _id: ObjectId('6783924ad2a84eb6c83ce0c3'),
+  nombre: 'Juan Pérez',
+  edad: 28,
+  posicion: 'Ala',
+  peso: 92,
+  altura: 1.88,
+  nacionalidad: 'Argentina',
+  direccion: {
+    calle: 'Av. Principal 123',
+    ciudad: 'París',
+    'código_postal': '75000',
+    'país': 'Francia'
+  },
+  contrato: {
+    'años_en_el_club': 5,
+    tipo: 'Profesional',
+    duracion: '2025-2027',
+    salario_anual: 50000
+  }
+  }//MUESTRA A TODOS LOS JUGADORES QUE EL NOMBRE EMPIEZA POR P O J//
+  db.jugadores.find().sort({ "contrato.salario_anual": -1 });
+
+  {  _id: ObjectId('6783929fd2a84eb6c83ce0cf'),
+    nombre: 'Michael Brown',
+    edad: 34,
+    posicion: 'Fullback',
+    peso: 88,
+    altura: 1.8,
+    nacionalidad: 'Nueva Zelanda',
+    direccion: {
+      calle: 'Main Street 789',
+      ciudad: 'Auckland',
+      'código_postal': '1010',
+      'país': 'Nueva Zelanda'
+    },
+    contrato: {
+      'años_en_el_club': 12,
+      tipo: 'Profesional',
+      duracion: '2013-2025',
+      salario_anual: 90000
+    }
+    }//MUESTRA DE MAYOR A MENOS LOS JUGADORES SEGUN SU SALARIO//
+
+    db.jugadores.find({ altura: { $gte: 1.80, $lte: 1.90 } });
+    {
+        _id: ObjectId('6783924ad2a84eb6c83ce0c3'),
+        nombre: 'Juan Pérez',
+        edad: 28,
+        posicion: 'Ala',
+        peso: 92,
+        altura: 1.88,
+        nacionalidad: 'Argentina',
+        direccion: {
+          calle: 'Av. Principal 123',
+          ciudad: 'París',
+          'código_postal': '75000',
+          'país': 'Francia'
+        },
+        contrato: {
+          'años_en_el_club': 5,
+          tipo: 'Profesional',
+          duracion: '2025-2027',
+          salario_anual: 50000
+        }
+      }//muestra a los jugadores que miden entre 1.80cm y 1.90cm//
+
+      db.jugadores.updateMany(
+        { "contrato.tipo": "Profesional" },
+        { $mul: { "contrato.salario_anual": 1.10 } }
+      );
+      {
+        acknowledged: true,
+        insertedId: null,
+        matchedCount: 19,
+        modifiedCount: 19,
+        upsertedCount: 0
+      } //SE AUMENTO UN 10% EL SALARIO A LOS JUGADORES//
+
+      db.jugadores.deleteMany({ "contrato.años_en_el_club": { $gt: 10 } }); // SE ELIMINO A LOS JUGADORES DE MAS DE 10 AÑOS DE ANTIGUEDAD//
+
+      db.jugadores.find({ "direccion.código_postal": { $regex: "^75" } });
+      {
+        _id: ObjectId('6783924ad2a84eb6c83ce0c3'),
+        nombre: 'Juan Pérez',
+        edad: 28,
+        posicion: 'Ala',
+        peso: 92,
+        altura: 1.88,
+        nacionalidad: 'Argentina',
+        direccion: {
+          calle: 'Av. Principal 123',
+          ciudad: 'París',
+          'código_postal': '75000',
+          'país': 'Francia'
+        },
+        contrato: {
+          'años_en_el_club': 5,
+          tipo: 'Profesional',
+          duracion: '2025-2027',
+          salario_anual: 55000.00000000001
+        }
+      }//MUESTRA A TODOS LOS JUGADORES CUYO CODIGO POSTAL EMPIEZA POR 75//
+
+      db.jugadores.aggregate([
+        { $group: { _id: null, promedioSalario: { $avg: "$contrato.salario_anual" } } }
+      ]);
+      {
+        _id: null,
+        promedioSalario: 58216
+      }//PROMEDIO SALARIO JUGADORES//
+
+      db.jugadores.aggregate([
+        { $group: { _id: "$posicion", total: { $sum: 1 } } }
+      ]);
+      {
+        _id: 'Segunda Línea',
+        total: 2
+      }//CUENTA CUANTOS JUGADORES HAY EN CADA POSICION//
+
+      db.jugadores.aggregate([
+        { $group: { _id: "$nacionalidad", totalJugadores: { $sum: 1 } } }
+      ]);
+      {
+        _id: 'Irlanda',
+        totalJugadores: 2
+      }//CUENTA CUANTOS HAY DE CADA NACIONALIDAD//
+
+      JAVASCRIPT
+
+      const { MongoClient } = require("mongodb");
+
+      const uri = "mongodb+srv://franciscojavierlavin:RebecaGimena01@cluster0.vmvy9.mongodb.net/"; // Cambia esta URI si tu base de datos no está en localhost
+      const client = new MongoClient(uri);
+      const dbName = "Racing92";
+      
+      async function connectToDB() {
+        await client.connect();
+        console.log("Conectado a la base de datos");
+        return client.db(dbName);
+      }
+
+
+      //ESTA FUNCION CREA UN NUEVO JUGADOR//
+      async function agregarJugador(jugador) {
+        const db = await connectToDB();
+        const collection = db.collection("jugadores");
+      
+        try {
+          const result = await collection.insertOne(jugador);
+          console.log("Jugador agregado con éxito:", result.insertedId);
+        } catch (error) {
+          console.error("Error al agregar jugador:", error);
+        } finally {
+          await client.close();
+        }
+      }
+      
+     //ASI SE USARIA LA FUNCION//
+      const nuevoJugador = {
+        nombre: "Carlos López",
+        edad: 26,
+        posicion: "Ala",
+        peso: 94,
+        altura: 1.86,
+        nacionalidad: "España",
+        direccion: {
+          calle: "Calle Mayor 123",
+          ciudad: "Madrid",
+          código_postal: "28001",
+          país: "España",
+        },
+        contrato: {
+          años_en_el_club: 3,
+          tipo: "Profesional",
+          duracion: "2025-2028",
+          salario_anual: 60000,
+        },
+      };
+      agregarJugador(nuevoJugador);
+      
+//ESTA FUNCION SERVIRIA PARA LISTAR LOS JUGADORES//
+async function listarJugadores() {
+    const db = await connectToDB();
+    const collection = db.collection("jugadores");
+  
+    try {
+      const jugadores = await collection.find().toArray();
+      console.log("Lista de jugadores:", jugadores);
+    } catch (error) {
+      console.error("Error al listar jugadores:", error);
+    } finally {
+      await client.close();
+    }
+  }
+  
+   //ASI SE USARIA LA FUNCION//
+  listarJugadores();
+  
+  //ESTA FUNCION ACTUALIZARIA NOMINA DE UN JUGADOR ESPECIFICO//
+  async function actualizarSalario(nombre, nuevoSalario) {
+    const db = await connectToDB();
+    const collection = db.collection("jugadores");
+  
+    try {
+      const result = await collection.updateOne(
+        { nombre: nombre },
+        { $set: { "contrato.salario_anual": nuevoSalario } }
+      );
+      console.log("Jugador actualizado:", result.modifiedCount > 0);
+    } catch (error) {
+      console.error("Error al actualizar el salario:", error);
+    } finally {
+      await client.close();
+    }
+  }
+  
+   //ASI SE USARIA LA FUNCION//
+  actualizarSalario("Carlos López", 65000);
+  
+//EDSTA FUNCION ELIMINARIA A UN JUGADOR//
+async function eliminarJugador(nombre) {
+    const db = await connectToDB();
+    const collection = db.collection("jugadores");
+  
+    try {
+      const result = await collection.deleteOne({ nombre: nombre });
+      console.log("Jugador eliminado:", result.deletedCount > 0);
+    } catch (error) {
+      console.error("Error al eliminar jugador:", error);
+    } finally {
+      await client.close();
+    }
+  }
+  
+  //ASI SE USARIA LA FUNCION//
+  eliminarJugador("Carlos López");
+  
+
+  
