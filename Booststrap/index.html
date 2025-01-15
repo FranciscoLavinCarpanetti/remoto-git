@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Boststrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">RugbyLove</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Link</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.shutterstock.com/image-photo/rugby-ball-players-260nw-2487307415.jpg" class="d-block w-100" alt="primera imagen balon de rugby">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.ecestaticos.com/Xm7EV7XAz5N6pFFBBI43lz8-54A=/0x0:2272x1515/1200x1200/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F099%2Fcca%2F40b%2F099cca40b43a86609736fd0cbd5d91d8.jpg" class="d-block w-100" alt="españa rugby">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/primary/lxormkzeowlb6lqvw2hd" class="d-block w-100" alt="isgro de rugby">
+              </div>
+              <div class="carousel-item">
+                <img src="https://blogs.iadb.org/trabajo/wp-content/uploads/sites/25/2015/10/rugby.jpg" class="d-block w-100" alt="jugadores de rugby">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Argentina 2025
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      6 Naciones 2025
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      España 2025
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section>
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                   Australia
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, culpa doloremque qui consectetur repellat iure! Quae quod, possimus, illo esse dolore animi similique dicta eaque, minus ut veniam velit nihil!
+                   Eaque molestias, dolor cupiditate, illum impedit doloribus reiciendis perspiciatis distinctio hic reprehenderit recusandae natus ipsa quidem. Illum, voluptatem quae. Doloremque eos nisi cum ratione praesentium rem officiis velit laborum consectetur?
+                   Quasi assumenda minus provident optio mollitia delectus laudantium voluptatum itaque! Repudiandae optio reiciendis culpa at quas, explicabo mollitia eum praesentium, laudantium dolorum laborum fuga adipisci a quisquam distinctio tempore consectetur.
+                   Possimus magnam soluta, earum atque nulla, repudiandae praesentium distinctio ea laboriosam natus quidem, quis optio provident quas error. Facere aperiam dicta, numquam nesciunt nam ratione eos cupiditate. Sunt, dolorem perferendis.
+                   Alias dolore reiciendis voluptate consequuntur eveniet repudiandae rem, pariatur corrupti harum quis. Minus corrupti id ratione aliquid voluptatem, eos porro inventore aperiam fugit sapiente dignissimos omnis incidunt accusamus assumenda eligendi!
+                   Vitae, debitis vero, fugit facere enim reprehenderit cum id modi minus, amet ducimus tenetur delectus hic deserunt. Nihil reprehenderit impedit velit dolores sequi iure voluptatibus deserunt repellendus dicta, iusto eveniet?
+                   Voluptas, suscipit hic dolorum ad nulla reprehenderit necessitatibus porro veritatis corporis eveniet sint neque magni velit eum. Odit ducimus molestias est illo, eius vero facere quam, iusto esse mollitia enim.
+                   Veniam distinctio eius ex impedit itaque! Optio aut unde nemo illum nisi ratione consectetur laborum, libero exercitationem quidem cupiditate mollitia molestias qui ut ad corporis alias ullam fugit eius molestiae.
+                   Cupiditate rem earum distinctio facere tempore consequatur inventore ipsa, delectus expedita dolorem laudantium quidem aspernatur laborum qui minima dolor doloremque omnis illum voluptas facilis incidunt molestias. Atque quae laudantium laboriosam?
+                   Voluptatibus hic, obcaecati quaerat nemo inventore quia voluptatum nisi quidem! Temporibus maxime assumenda dolorem id, ut possimus eligendi ea, obcaecati enim molestiae ipsum dignissimos fuga. Illo et quis eveniet architecto?</p>
+                  </div>
+                  <div class="col">
+                    Gales 
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam suscipit aliquam quas quasi nam est accusamus modi, porro aut ab molestias dicta totam quidem odit quia corporis tenetur voluptas sequi?
+                    Sapiente labore sunt nobis alias voluptate provident, dolorum, neque aliquam, aliquid eum velit exercitationem quia reiciendis quidem in ab laborum blanditiis. Minus voluptas ea placeat necessitatibus asperiores harum numquam quia.
+                    Voluptate, molestiae. Ex culpa ipsum tempora vitae fugit eius totam omnis esse quo, laudantium iusto minus? Sequi, ullam deserunt fugit nesciunt libero quibusdam optio dolore, aliquid illo nihil incidunt sunt!
+                    Quia dolorum perspiciatis minus veniam dolores, tenetur similique officia impedit quos eius eos amet nisi rem ullam voluptates est fugiat aliquid doloremque eveniet soluta, atque illum quam temporibus. Reprehenderit, impedit.
+                    Nemo, ullam autem laboriosam eius optio in natus quaerat beatae voluptatum modi. Impedit non repellat magnam quia earum tempore atque eos nisi necessitatibus recusandae nulla incidunt, fugiat iste vero aspernatur?
+                    Minus nihil, numquam beatae, totam dolorum culpa molestias consequuntur dolor aperiam quas ipsum vero aliquam delectus saepe voluptate quod nulla accusamus nesciunt omnis perspiciatis veritatis? Ad architecto molestias fugiat nulla!
+                    Aperiam iusto consequuntur voluptates, blanditiis, soluta et maiores atque deleniti distinctio rem, quo sapiente dolorum assumenda repellat nostrum error explicabo ipsa accusantium exercitationem laboriosam debitis? Obcaecati perspiciatis minus deleniti expedita!
+                    Minus consectetur similique quidem soluta dignissimos unde aut veritatis ea officiis esse, non iste laborum delectus incidunt explicabo voluptate voluptas dolorum eveniet laudantium architecto quibusdam iusto quis fuga? Tempore, natus?
+                    Hic illo repellendus omnis quasi impedit perferendis maiores id dolores maxime molestias animi odit placeat doloremque natus ex, totam expedita dolorum tempore obcaecati tempora at sed blanditiis voluptate laudantium! Error?
+                    Suscipit, repellendus incidunt necessitatibus voluptatibus laudantium delectus. Sapiente alias aut, perspiciatis perferendis nam minima placeat reiciendis dolorum! Nemo sequi, a laborum accusamus velit quam aperiam! Obcaecati dolorem temporibus corrupti quam!</p>
+                  </div>
+                  <div class="col">
+                    Fiji
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odio a iste praesentium dolores cupiditate repellat corporis odit unde! Atque soluta voluptatibus commodi ad fugit quod voluptas tempore necessitatibus dolorem.
+                    Nam dignissimos nihil repudiandae nostrum quo ad ipsam impedit quod beatae! Quaerat, ipsam. Saepe maiores, voluptate aliquid fugiat porro reiciendis repellendus animi nemo nostrum necessitatibus reprehenderit illo. Culpa, necessitatibus unde.
+                    Dolores eos culpa pariatur nihil id, maiores placeat repudiandae voluptates reiciendis iste sapiente! Eos corrupti in, repellendus doloribus blanditiis quod sint illo recusandae culpa! Dolores tempore repellendus voluptatibus dolorem saepe!
+                    Nihil quis autem, illum numquam quam, quidem ratione error aliquam nostrum recusandae necessitatibus repellat voluptatum qui culpa quibusdam adipisci quasi ipsam dolorum distinctio veniam, odit harum eius ducimus earum. Fugit.
+                    Natus cum sed doloribus debitis qui. Aspernatur sed veritatis nobis? Natus quis corporis deserunt iusto, facilis delectus accusantium voluptatem asperiores blanditiis doloribus! Debitis ullam aliquid facere vitae temporibus nihil nesciunt.
+                    Libero, officia quisquam. Cum, molestias exercitationem sed itaque unde iure, illum ducimus iusto illo animi assumenda, totam debitis delectus? Ipsum distinctio sapiente, officia culpa dicta dolor unde dolore rerum aperiam!
+                    Iusto unde, non esse dolorem ullam, laudantium aperiam quidem dicta in numquam, impedit aliquid. Quasi totam temporibus quos dolor excepturi explicabo eius pariatur. Impedit cum provident, exercitationem amet voluptates quibusdam?
+                    Exercitationem velit, labore aperiam facere, ipsa enim, fugit asperiores debitis vitae cumque deleniti! Quidem perferendis debitis quo impedit! Eos necessitatibus repellat sunt, quam totam cumque deleniti atque omnis maiores exercitationem!
+                    Qui odio dolorem impedit repudiandae id recusandae delectus doloremque, dignissimos quas, odit blanditiis, minus veritatis? Consequatur aperiam, ab odit autem, mollitia, hic sunt expedita delectus eveniet tempora eligendi possimus nobis.
+                    Fugit voluptate quisquam itaque cum? Quaerat facilis repellendus, natus quo odit pariatur perferendis labore ipsam non explicabo illum consectetur placeat, voluptas iste? Neque natus culpa explicabo rerum dolorem quis fugit.</p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section>
+            
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
