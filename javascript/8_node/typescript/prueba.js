@@ -1,5 +1,6 @@
-var nombre = 'Francisco';
+var nombres = 'Francisco';
 function saludar(usuario) {
     console.log('Bienvenido ' + usuario);
 }
-saludar(nombre);
+saludar(nombres);
+
