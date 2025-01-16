@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header />
+    
+    <main>
+
+        <form action="">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <!-- Input de nombre -->
+                <label for="">
+                    Nombre: 
+                    <input type="text" name="nombre" id="nombre" required placeholder="Nombre..">
+                </label>
+                <!-- Input de email -->
+                <label for="">
+                    Correo Electronico:
+                    <input type="email" name="email" id="email" required placeholder="email@email.com">
+                </label>
+                <!-- Input de telefono -->
+
+                <label for="">
+                    Numero de Telefono:
+                    <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}" required>
+                </label>
+                <!-- Aqui termina el fieldset-->
+
+            </fieldset>
+            <fieldset>
+                <legend>Detalles del Evento:</legend>
+                <label for="">
+                    Fecha del Evento:
+                    <input type="date" name="fecha_evento" id="eventoDate">
+                </label>
+                <label for="">
+                    Pais:
+                    <select name="pais" id="pais">
+                        <option value="" required>Selecciona un Pais</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="España">España</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Alemania">Alemania</option>
+
+                    </select>
+                </label>
+
+                <fieldset>
+                    <legend>
+                    Area de Interes:
+
+                    </legend>
+                    <label for="">
+                        Desarrollo Web
+                    <input type="checkbox" name="interes" value="desarrolloWeb">
+                </label> <br>
+                <label for="">
+                    Ciberseguridad
+                    <input type="checkbox" name="interes" value="Ciberseguridad">
+                </label> <br>
+                <label for="">
+                    Inteligencia Artificial
+                    <input type="checkbox" name="interes" value="IA">
+                </label>
+                </fieldset>
+                    
+                <label for="">
+                    Turno Preferido:
+                    <input type="radio" name="turno" value="mañana">Mañana
+                    <input type="radio" name="turno" value="tarde">Tarde
+                </label>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Comentarios Adicionales:</legend>
+                <label for="comentarios">
+                    comentarios o sugerencias: <br>
+                    <textarea name="comentarios" id="comentarios" placeholder="Añade aqui comentario adicional sobre que te gustaria que mejoraramos" cols="50" rows="6"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Terminos y condiciones</legend>
+                <label for="">
+                    Acepto los terminos y condiciones
+                    <input type="checkbox" name="terminos" id="terminos" required>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="reset">
+        </form>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Ir al inicio</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

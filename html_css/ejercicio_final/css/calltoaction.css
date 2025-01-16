@@ -1,0 +1,21 @@
+#calltoaction {
+    background-image: url(../assets/images/qt-bg.jpg);
+    padding: 7rem 0;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+
+    blockquote {
+        font-family: var(--secondary-font);
+        font-style: italic;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+
+    author {
+        font-size: 1.2rem;
+    }
+}

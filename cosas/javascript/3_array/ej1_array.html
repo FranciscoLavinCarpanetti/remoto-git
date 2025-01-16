@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintar un lista de nombres</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // crear un lista de array de diez nombres y pintarlos en una lista no numerada <ul>
+
+        const nombres = ['Juan', 'Maria', 'Pedro', 'Ana', 'Luis', 'Sofia', 'Jorge', 'Laura', 'Carlos', 'Rosa']
+        const animales = ['Aguila', 'Colibri', 'Cuervo'];
+        const frutas = ['Manzana', 'Pera', 'Naranja', 'Mango', 'Pina', 'Fresa', 'Platano', 'Sandia', 'Uva', 'Melon'];
+
+        function pintarUnItem(item) {
+            return `<li>${item}</li>`
+        }
+
+        function pintarLista(array) {
+            let ul = "<ul>";
+            for (let i = 0; i < array.length; i++) {
+                ul += pintarUnItem(array[i])
+            }
+            ul += "</ul>"
+            document.write(ul)
+        }
+
+        pintarLista(nombres)
+        pintarLista(animales)
+        pintarLista(frutas)
+
+
+    </script>
+
+</body>
+
+</html>

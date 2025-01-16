@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreach es un funcion que permite recorre el array elimindo el las llaves</title>
+</head>
+
+<body>
+    <script>
+
+        //foreach -> solo sirve para recorrer arrays de cualquier tipo.
+        const listaCompra = [
+            { title: 'leche', price: 2, cantidad: 7 },
+            { title: 'pan', price: 0.25, cantidad: 2 },
+            { title: 'huevos', price: 6, cantidad: 2 },
+            { title: 'carne', price: 12.5, cantidad: 1 },
+            { title: 'pescado', price: 7, cantidad: 3 },
+        ]
+
+        function printOneProduct(producto, posicion) {
+            document.write(`<p>${posicion} - ${producto.title}</p>`)
+        }
+        function printAllProducts(productsList) {
+            productsList.forEach((product, index) => printOneProduct(product, index))
+        }
+
+        printAllProducts(listaCompra)
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

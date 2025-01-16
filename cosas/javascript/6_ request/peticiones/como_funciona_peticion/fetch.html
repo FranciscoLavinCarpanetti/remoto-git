@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir datos a una API con Fetch</title>
+</head>
+
+<body>
+
+    <section id="users">
+        <!-- <article>
+                <h3>nombre de usuario</h3>
+                <ul>
+                    <li>datos</li>
+                </ul>
+        </article> -->
+    </section>
+
+    <script>
+        //metodo amazon.
+
+        const url = "https://jsonplaceholder.typicode.com/users"
+        const sectionUser = document.querySelector('#users');
+
+        function printOneUser(user, dom) {
+            const article = document.createElement('article');
+            const h3 = document.createElement('h3');
+            h3.textContent = `User: ${user.username} - Name: ${user.name}`
+            article.appendChild(h3)
+            dom.appendChild(article)
+        }
+
+        function printAllUsers(users, dom) {
+            users.forEach(user => printOneUser(user, dom))
+        }
+
+
+        async function cargarDatos(url) {
+
+            /* opcion 1: async await */
+            /*
+            try {
+                let peticion = await fetch(url, { method: 'GET' })
+                let data = await peticion.json()
+                console.log(data)
+                printAllUsers(data, sectionUser)
+            } catch (error) {
+                alert(error)
+            }
+            /* opcion 2: then catch */
+            fetch(url, { method: 'get' })
+                .then(peticion => {
+                    peticion.json()
+                        .then(data => printAllUsers(data, sectionUser))
+                        .catch(error => console.log(error))
+                })
+                .catch(error => {
+                    alert(error)
+                })
+        }
+
+
+        cargarDatos(url)
+        console.log('otras cositas')
+    </script>
+</body>
+
+</html>

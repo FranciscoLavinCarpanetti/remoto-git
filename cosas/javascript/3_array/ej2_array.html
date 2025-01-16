@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=q, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //pintar en ul un listado de numeros pares. Basandome en un listado de numeros completo
+
+        const numeros = [2, 3, 345, 32, 67, 87, 43, 23, 90, 87, 53, 23, 11, 10]
+
+        function pintarUnNumero(num) {
+            return `<li>${num}</li>`
+        }
+
+        function pintarNumeros(arrayNums) {
+            let html = '<ul>'
+            for (let numero of arrayNums) {
+                html += pintarUnNumero(numero)
+            }
+            html += '</ul>'
+            document.write(html)
+        }
+
+
+        function filtrarNumerosPares(arrayNums, divisor = 2) {
+            let listaPares = [];
+            for (let numero of arrayNums) {
+                if (numero % divisor === 0) {
+                    listaPares[listaPares.length] = numero
+                }
+            }
+            return listaPares
+        }
+
+        function filtrarNumerosImpares(arrayNums) {
+            let listaImpares = [];
+            for (let numero of arrayNums) {
+                if (numero % 2 !== 0) {
+                    listaImpares[listaImpares.length] = numero
+                }
+            }
+            return listaImpares
+        }
+
+
+        // quiero pintar los pares en un listado y los impartes en otro listado
+        let listaNumerosPares = filtrarNumerosPares(numeros)
+        let listaNumerosImpares = filtrarNumerosImpares(numeros)
+        let listaNumerosDivisiblePor3 = filtrarNumerosPares(numeros, 3)
+        pintarNumeros(listaNumerosPares)
+        pintarNumeros(listaNumerosImpares)
+        pintarNumeros(listaNumerosDivisiblePor3)
+
+
+
+    </script>
+
+</body>
+
+</html>

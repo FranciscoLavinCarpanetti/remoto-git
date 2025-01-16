@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeners</title>
+</head>
+
+<body>
+    <ul>
+        <li data-color="blue">Azul</li>
+        <li data-color="green">Verde</li>
+        <li data-color="tomato">Rojo</li>
+    </ul>
+
+    <script>
+
+        const lis = document.querySelectorAll('ul li');
+
+        for (let li of lis) {
+            li.addEventListener('click', cambiarColor)
+        }
+
+        function cambiarColor(event) {
+            let color = event.target.dataset.color;
+            const dom = event.target; //del evento que recibo el objeto que estoy tocando
+            dom.style.color = color;
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

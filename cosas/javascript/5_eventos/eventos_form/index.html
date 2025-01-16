@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            padding: 10px;
+        }
+
+        input {
+            width: 100%;
+            display: block;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .error {
+            color: red;
+            font-size: 80%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="formulario">
+        <form action="send.html">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="introduce tu nombre">
+            </div>
+            <div>
+                <label for="aficion">Aficion</label>
+                <input type="text" id="aficion" name="aficion" placeholder="introduce tu afición">
+            </div>
+            <p class="error"></p>
+            <input type="submit" value="enviar">
+        </form>
+    </section>
+    <hr>
+    <section id="resultado">
+        <ul>
+        </ul>
+    </section>
+
+    <script src="./js/form.js"></script>
+</body>
+
+</html>

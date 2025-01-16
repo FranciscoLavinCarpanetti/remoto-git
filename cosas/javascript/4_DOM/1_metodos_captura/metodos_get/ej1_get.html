@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <header>
+        <ul id="menu"></ul>
+    </header>
+
+
+    <footer>
+        <ul id="menu2">
+        </ul>
+    </footer>
+    <script>
+        const secciones = ['inicio', 'galeria', 'contacto', 'servicios']
+        const legal = ['Aviso legal', 'cookies', 'privacidad']
+
+        // dentro de ul metais li con el texto del array.
+
+        const ulmenu = document.getElementById('menu');
+        const ulFooter = document.getElementById('menu2');
+
+        function printOneSection(texto, dom) {
+            dom.innerHTML += `<li>${texto}</li>`
+        }
+
+        function printArray(list, dom) {
+            list.forEach(seccion => printOneSection(seccion, dom))
+        }
+
+        printArray(secciones, ulmenu)
+        printArray(legal, ulFooter)
+
+
+
+
+        const listaH1 = document.getElementsByTagName('h1')
+        const h1 = listaH1[0]
+        h1.innerHTML = `<span style="color:red">Fran</span>`
+
+
+    </script>
+
+</body>
+
+</html>

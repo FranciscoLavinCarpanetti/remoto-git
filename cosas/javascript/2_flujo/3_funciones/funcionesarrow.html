@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones arrow</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        //Receta para una funcion arrow sin dolor
+
+        // las arrow functions tienen dos objetivos: El primero escribir menos. El segundo reducir el ambito es decir las llaves {}. El codigo era mas legible.
+
+        //NO TODAS LAS FUNCIONES MERENCEN LA PENA CONVERTIRLAS A ARROW FUNCTIONS.
+
+        // Paso 0: necesito una funcion expresiva. Funcion declaritiva tendría un primer paso de convertirla a expresiva.
+
+        // Paso 1: Quito la palabra function y la sustituyo por una flecha ( => ), situandola por delante de los parentesis de la función.
+
+        // Paso 2: Solo si la función recibe un unico parametro (ni cero ni mas de uno) se pueden quitar las parentesis de la funcion.
+
+        // Paso 3: Si la funcion tiene o ejecuta una sola linea de codigo (una unica acción) se pueden quitar las llaves. OJO si es la linea es un return SE DEBE quitar el return OBLIGATORIAMENTE
+
+        /*
+        function sumar(n1, n2) {
+            let resultado = n1 + n2;
+            console.log(resultado);
+        }
+
+        */
+
+        //paso 0: pasarla anomina o expresiva
+
+        /*
+        const sumar = function (n1, n2) {
+            let resultado = n1 + n2;
+            console.log(resultado);
+        }
+
+        */
+
+
+        // paso 1:
+
+        /*
+        const sumar = (n1, n2) => {
+            let resultado = n1 + n2;
+            console.log(resultado);
+        }
+        */
+
+        //paso 2:
+
+        /* 
+        const sumar = (n1, n2) => {
+            let resultado = n1 + n2;
+            console.log(resultado);
+        }
+        */
+
+        //paso 3:
+
+        const sumar = (n1, n2) => n1 + n2;
+
+
+
+    </script>
+</body>
+
+</html>

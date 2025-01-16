@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambito de bloque</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //ambito de bloque: es similar al ambito funcional pero la variable creada dentro de cualquier estructura de {} son locales. LET - CONST 
+
+        var nombre = 'Juan Antonio'; //global
+        let ciudad = 'Madrid'; //global
+        const pi = 3.141517; //global const es un elemento inmutable
+
+        function sumar() {
+            var numero1 = 12 // local
+            let numero2 = 45 // local
+            const otroNumero = 34 // local
+        }
+
+        if (nombre === 'Juan Antonio') {
+            var apellido = 'Perez' //global
+            let cosa = "hola" //local
+            const area = 10 //local
+
+        }
+
+
+        for (let i = 1; i < 10; i++) {
+            console.log(i)
+        }
+
+        for (let i = 1; i < 10; i++) {
+            console.log(i)
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>

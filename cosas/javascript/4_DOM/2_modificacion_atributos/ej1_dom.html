@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones del DOM</title>
+    <style>
+        .clase1 {
+            background-color: tomato;
+        }
+
+        .clase2 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="lista"></ul>
+
+
+    <script>
+
+        //dado este array de nombres
+        const nombres = ["Ana", "Joaquin", "Juan Antonio", "Teresa", "Pepe", "Lucia"]
+
+        //pintar este array dentro del el ul con lis
+        // si la longitud del nombre es mayor de 5 le aplicamos un color de fondo rojo
+        // y si la longitud del nombres es menor de 5 que le aplicamos un color de texto verde.
+
+        const ul = document.querySelector('.lista');
+
+
+        function printOneName(name, dom) {
+            let clase = (name.length >= 5) ? 'clase1' : 'clase2';
+            dom.innerHTML += `<li class="${clase}">${name}</li>`
+        }
+
+
+        function printAllNames(list, dom) {
+            list.forEach(name => printOneName(name, dom))
+
+        }
+
+        printAllNames(nombres, ul)
+
+
+
+
+    </script>
+
+</body>
+
+</html>

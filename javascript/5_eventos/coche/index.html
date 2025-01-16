@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de coche</title>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        figure {
+            width: 150px;
+            transform: rotateZ(180deg);
+            transition: margin 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <figure>
+        <img src="https://www.deividart.com/libres/zycars-coche_camaro-2.png">
+    </figure>
+
+
+    <script>
+        //eventos de teclado tiene la particularidad que solo actuan sobre el documento.
+        const coche = document.querySelector('figure');
+
+        let avanceCocheX = 0;
+        let avanceCocheY = 0;
+
+
+        function moverX(vel, grados) {
+            avanceCocheX += vel
+            coche.style.marginLeft = avanceCocheX + 'px'
+            coche.style.transform = `rotateZ(${grados}deg)`
+        }
+
+        function moverY(vel, grados) {
+            avanceCocheY += vel;
+            coche.style.marginTop = avanceCocheY + 'px';
+            coche.style.transform = `rotateZ(${grados}deg)`;
+        }
+
+        function capturarTecla(event) {
+            switch (event.code) {
+                case 'KeyD':
+                    console.log('d')
+                    if (avanceCocheX < (window.innerWidth - 150)) {
+                        moverX(80, 180)
+                    }
+                    break;
+
+                case 'KeyA':
+                    console.log('a')
+                    if (avanceCocheX >= 0) {
+                        moverX(-80, 0)
+                    }
+                    break;
+
+                case 'KeyW':
+                    console.log('w')
+                    moverY(-80, 90)
+                    break;
+
+                case 'KeyS':
+                    console.log('s')
+                    moverY(80, 270)
+                    break;
+            }
+        }
+        document.addEventListener('keypress', capturarTecla)
+
+
+
+    </script>
+</body>
+
+</html>

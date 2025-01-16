@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn {
+            border: 0;
+            border-radius: 0;
+            padding: 10px 40px;
+            height: 20px;
+            transition: 1s;
+            display: inline-block;
+        }
+
+        .btn-rojo {
+            background-color: tomato;
+        }
+
+        .btn-verde {
+            background-color: green;
+        }
+
+        .tamano {
+            height: 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <span class="btn btn-rojo">Click</span>
+
+    <script>
+
+        const button = document.querySelector('.btn-rojo')
+
+        // vamos a quitar un clase - voy a eliminar btn-rojo
+        button.classList.remove('btn-rojo')
+
+        // vamos añidir un clase - add
+        button.classList.add('btn-verde')
+
+
+        //vamos a aprender a remplazar un clase por otra btn-verde por btn-rojo
+        button.classList.replace('btn-verde', 'btn-rojo')
+
+
+        //toggle si clase existe la borrar y sino existe la pone
+        function cambiarTamano() {
+            button.classList.toggle('tamano')
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

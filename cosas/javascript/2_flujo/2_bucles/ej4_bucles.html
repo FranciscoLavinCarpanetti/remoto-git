@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 3</title>
+    <style>
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+
+        // pedir por pantalla un numero de cuadrados 
+        // cada cuadrado debe tener dentro de si mismo en numero de la posicion
+        // cada cuadrado debera tener un color de fondo, ese color vendrá determinado por su posicion par o impar. Si es par verde, y si impar rojo
+
+        // paso 1: pintar un cuadrado de cualquier color con un numero ✅
+        // paso 2: pintar n cuadradado con su numero dentro ✅
+        // paso 3: pintar n cuadrados eligiendo el color que quiero ✅
+        // paso 4: pintar n cuadrados siendo verde par y rojo impar. ✅
+
+        var numero = 12;
+        var color = ''
+        var numeroCuadrados = Number(prompt('dime cantidad de cuadrados: '))
+
+        for (var i = 1; i <= numeroCuadrados; i++) {
+            color = (i % 2 === 0) ? 'green' : 'red'
+            document.write(`<div class="cuadrado" style="background-color: ${color};">${i}</div>`)
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

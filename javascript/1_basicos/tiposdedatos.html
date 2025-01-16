@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // esto mal
+        var a = 1;
+
+        // nomenclatura de nombres de variables: camelcase
+
+        // esto esta bien
+        var nameStudent = "Juan Antonio"
+        console.log(nameStudent)
+
+
+        // undefined 
+        var noDefinida;
+        console.log(noDefinida)
+
+        // como evitar undefined - asignando siempre un valor por defecto
+        var edad = 0;
+        console.log(edad) // 0
+        console.log(typeof (edad)) // number
+        edad = 'hola'
+        console.log(typeof (edad)) // string 
+        console.log(edad) // hola
+
+        //ejemplo
+        var numero1 = 21
+        var numero2 = Number(prompt('Dime otro numero: '))
+
+        console.log(numero1 + numero2)
+
+
+        // string
+        var nombre = "Juan Antonio";
+        var apellido = 'Perez';
+        var ciudad = `Madrid`; //template literal
+
+        var texto = 'Juan dice: "javascript es guay"';
+        var html = `<div>
+                        <strong class="rojo">Juanan</strong>
+                    </div>`;
+        // valor por defecto de string
+        var porDefectoString = "";
+
+
+        //number
+        var edad = 12 //entero
+        var precio = 3.45 // numero racional
+        var numero = -23 // numero negativo
+        var porDefectoNumber = 0;
+
+
+        //booleanos
+        var estado = false;
+        var activo = true;
+        var porDefectoBoolean = false;
+
+
+        //inferencia de tipos: una variables tomas su tipo del valor que contiene
+        var cosa = 4; // por inferencia el tipo es number
+        cosa = "hola" // por inferencia el tipo es string       
+
+
+
+
+        //como vacio una variable
+        var numeroEntero = 45;
+        numeroEntero = 0
+        //vaciar una variable de tipo y valor
+        numeroEntero = null;
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

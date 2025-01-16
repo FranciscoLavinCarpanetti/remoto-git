@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // ambito como cualquier conjunto de codigo metido entre llaves. Ambito funcional solo son con las llaves ejecutadas en funciones
+
+        // ambito global y ambito local
+        // ambito global una variable creada fuera de cualquier funcion
+        // ambito local es un variables creada dentro de una funcion.
+
+        var nombre = 'Juan' //global
+
+        function saludar() {
+            var apellido = 'Perez' //local
+        }
+
+        if (nombre === 'Pepe') {
+            var edad = 12; //global
+        }
+
+        console.log(edad)
+
+
+
+        saludar()
+
+        console.log(apellido)
+
+
+    </script>
+
+</body>
+
+</html>

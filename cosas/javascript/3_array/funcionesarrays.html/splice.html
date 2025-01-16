@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //splice - modifica el array original por que elimina un elemento en cualquier posición. Recalculando las posicion de los demas.
+
+        //splice recibe dos parametros el primero la posicion desde la que empezamos a borrar y el segundo la cantidad de elementos que borramos.
+
+        //splice devuelve un array con elementos eliminados splice(posicionInicial, cantidad)
+
+        const animales = ['Leon', 'Gato', 'Oveja', 'Jirafa', 'Perro']
+
+        const animalesBorrados = animales.splice(1, 3)
+
+        console.log(animales)
+        console.log(animalesBorrados)
+
+
+        //tambien me permite sustituir en cualquier posicion
+        animales.splice(0, 1, 'Tigre')
+
+        console.log(animales)
+
+
+
+
+    </script>
+
+</body>
+
+</html>

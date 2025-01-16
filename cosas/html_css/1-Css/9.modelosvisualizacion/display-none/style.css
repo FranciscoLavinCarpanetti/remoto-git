@@ -1,0 +1,14 @@
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(65, 225, 113);
+
+}
+
+.oculto {
+    display: none;
+}
+
+.visibilidad {
+    visibility: hidden;
+}

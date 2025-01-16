@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //filter recorre el array por nosotros recoje un valor del array y lo pasa a la funcion de condicion, si cumple la condicion hace push el array resultante. Me devuelve un array
+
+        const valores = [1, 2, 47, 35, 21, 26, 25, 20]
+
+        //find solo aparece el primero que lo cumple con filter recibo una lista con todos los que lo cumplen
+
+        const listaDivisiblesPor3 = valores.filter(valor => valor % 3 === 0)
+
+        console.log(listaDivisiblesPor3)
+
+
+        const alumnos = [
+            { nombre: 'Juan Antonio', edad: 41 },
+            { nombre: 'Lucia', edad: 26 },
+            { nombre: 'Marta', edad: 12 },
+            { nombre: 'Rodrigo', edad: 32 },
+            { nombre: 'Pepe', edad: 65 },
+        ]
+
+        // encapsularme este metodo para que podemos buscar por cualquier edadminima y maxima
+        function filterByAge(lista, ageMin, ageMax) {
+            const alumnosFilter = lista.filter(alumno => alumno.edad >= ageMin && alumno.edad <= ageMax)
+            console.table(alumnosFilter)
+
+        }
+
+        filterByAge(alumnos, 5, 30)
+    </script>
+
+</body>
+
+</html>

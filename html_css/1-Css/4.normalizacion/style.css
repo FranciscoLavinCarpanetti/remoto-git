@@ -1,0 +1,7 @@
+@import url(./CSS/reset.css);
+@import url(./CSS/layout.css);
+
+body {
+  background-color: aqua;   
+}
+

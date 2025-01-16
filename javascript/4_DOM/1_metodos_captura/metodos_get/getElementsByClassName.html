@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <section>
+        <p class="impar">1</p>
+        <p class="par">2</p>
+        <p class="impar">3</p>
+        <p class="par">4</p>
+        <p class="impar">5</p>
+        <p class="par">6</p>
+        <p class="impar">7</p>
+        <p class="par">8</p>
+        <p class="impar">9</p>
+        <p class="par">10</p>
+    </section>
+
+    <script>
+        // a todos los elementos de la clase impar quiero ponerles la palabra impar delante del numero
+
+        const parrafosImpares = document.getElementsByClassName('impar');
+        const parrafosPares = document.getElementsByClassName('par');
+
+        for (let parrafo of parrafosPares) {
+            parrafo.innerHTML = `<strong>${parrafo.textContent}</strong>`
+        }
+
+
+        for (let parrafo of parrafosImpares) {
+            parrafo.textContent = 'impar ' + parrafo.textContent
+        }
+
+    </script>
+
+</body>
+
+</html>

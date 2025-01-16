@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array simple</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // un array es un conjunto de elementos, datos, casi siempre del mismo tipo.
+
+        // Declarar un array vacio. Dos formas funcional y POO
+
+        const frutas = [] //funcional
+        const animales = new Array() // POO
+
+        // Declarar un array con elementos
+
+        const aves = ['Aguila', 'Colibri', 'Cuervo'];
+        const frutasTropicales = ['Piña', 'Banana', 'Manzana', 'Pera'];
+        const numeros = [1, 23, 5, 3, 6, 8, 433]
+        const cosas = ['http://192.168.1.1', 22, true]
+
+        // todos los array tienen longitud es la cantidad de elementos del array
+        let longitud = aves.length // 3
+
+        // como accedo a un dato del array, pues por posicion
+        let animal = aves[2]; //Cuervo
+
+        console.log(aves) // ['Aguila', 'Colibri', 'Cuervo']
+        console.log(animales) // []
+        console.log(animal) // Cuervo
+
+        // como se se pinta un array
+
+        function pintarUnItem(item) {
+            document.write(`<h1>${item}</h1>`)
+        }
+
+        function pintarArray(array) {
+            for (let i = 0; i < array.length; i++) {
+                pintarUnItem(array[i])
+            }
+        }
+
+
+
+        pintarArray(aves)
+        pintarArray(frutasTropicales)
+        pintarArray(cosas)
+
+        pintarUnItem(aves[2])
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animales {
+    padding: 1.25rem;
+
+    article {
+        border: 0.1875rem solid black;
+        padding: 0.625rem;
+        background-color: beige;
+        margin-bottom: 0.625rem;
+    }
+}

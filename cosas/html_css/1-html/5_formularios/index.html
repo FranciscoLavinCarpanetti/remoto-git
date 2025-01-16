@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>FORMULARIOS</h1>
+    </header>
+    <main>
+      <form action="resultado.html" method="GET">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <!-- input que admite texto -->
+           <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" required placeholder="Luis.." minlength="6" />
+
+          <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" value="Nuñez" readonly />
+          <!-- input que admite numeros -->
+          <input type="number" name="edad" min="0" max="50" step="2" />
+
+          <!-- boton para ejecutar el formulario -->
+          <input type="submit" value="Guardar" />
+          <button>Enviar</button>
+
+          <!-- input para contraseña -->
+          <input type="password" name="pass" />
+
+          <!-- input para email -->
+          <input type="email" name="email" placeholder="introduce un email" required/>
+
+          <!-- input para introducir direcciones web -->
+          <input type="url" name="direccion" size="40" />
+
+          <!-- input para rangos numericos -->
+          <label>Rango -20 y 20</label>
+          <input type="range" name="rango" min="-20" max="20" />
+
+          <!-- input para colores -->
+          <input type="color" name="color" />
+
+          <!-- input para fecha -->
+          <input type="date" name="fecha" />
+
+          <!-- input para horas o tiempo-->
+          <label for="">hora inicio</label>
+          <input type="time" name="horas" value="13:30" />
+          <label for="">hora fin</label>
+          <input type="time" name="horas" value="13:30" />
+
+          <!-- semanas - no admitido solo chrome-->
+          <input type="week" name="semanas" />
+
+          <!-- para enviar archivos adjuntos-->
+          <!-- ** OJO es necesario la propiedad de form 
+				enctype="multipart/form-data"-->
+          <div>
+            <label for="file">Añadir adjunto</label>
+            <input type="file" id="file" name="file"/>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos laborales</legend>
+          <label for="empresa">Empresa:</label>
+          <input type="text" name="empresa" id="empresa" />
+        </fieldset>
+
+        <fieldset>
+            <legend>si o no</legend>
+            <label for="siNo">Si o no</label>
+            <input type="radio" name="siNo" value="si" />si me gusta mucho este formulario
+            <input type="radio" name="siNo" value="no" />no
+            <input type="radio" name="siNo" value="tal vez" />tal vez
+        </fieldset>
+
+        <label for="condiciones">Acepto las condiciones</label>
+        <input type="checkbox" name="condiciones" id="condiciones">
+        <label for="condiciones">No Acepto las condiciones</label>
+        <input type="checkbox" name="condiciones 2" id="condiciones2">
+        <label for="condiciones">Tal vez Acepto las condiciones</label>
+        <input type="checkbox" name="condiciones 3" id="condiciones3">
+        <label for="condiciones">No se si Acepto las condiciones</label>
+       
+        <input type="submit" value="Enviar value" />
+        <input type="reset" value="reset" />
+        <button type="submit">Enviar desde etiqueta button</button>
+        <button type="button">etiqueta button</button>
+        <button type="reset" disabled>reset</button>
+
+
+        <label>label:
+            <input type="text" name="label" id="label">
+        </label>
+        <input type="checkbox" name="casilla" id="casilla1">
+        <label for="casilla1">Casilla 1</label>
+      </form>
+ 
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicional simple con secuencia de escape</title>
+</head>
+
+<body>
+
+    <script>
+
+        var nota = Number(prompt('Dime tu nota: '))
+
+        // la secuencia de escape de un if siempre debe contener los valores no esperados,solo se puede usar como opcion valida para toma de decision binarias.
+
+        // error la estructura es ambigua
+        if (nota >= 5 && nota <= 10) {
+            console.log('aprobado')
+        } else {
+            console.log('suspenso')
+        }
+
+
+        var isActive = true;
+
+        if (!isActive) {
+            console.log('elemento apagado')
+        } else {
+            console.log('elemento encendido')
+        }
+
+
+        var numero = Number(prompt('Dime un numero: '))
+        // quiero saber si el numero es negativo a positivo
+        if (numero < 0) {
+            console.log('negativo')
+        } else {
+            console.log('positivo')
+        }
+
+
+    </script>
+
+</body>
+
+</html>

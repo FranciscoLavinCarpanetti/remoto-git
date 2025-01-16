@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificacion de atributos</title>
+    <style>
+        figure {
+            border: 2px solid black;
+            padding: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <script>
+        const imagenes = [
+            { url: './images/g-shutterbug.jpg', title: 'Shutterbug' },
+            { url: './images/g-salad.jpg', title: 'Salad' },
+            { url: './images/g-skaterboy.jpg', title: 'Skaterboy' },
+            { url: './images/g-shutterbug.jpg', title: 'Shutterbug' },
+            { url: './images/g-skaterboy.jpg', title: 'Skaterboy' },
+            { url: './images/g-salad.jpg', title: 'Salad' },
+        ]
+
+    </script>
+</head>
+
+<body>
+
+    <figure>
+        <img src="./images/g-shutterbug.jpg" alt="shutterbug">
+        <figcaption>shutterbug</figcaption>
+    </figure>
+
+    <script>
+        const img = document.querySelector('figure img');
+        const figcaption = document.querySelector('figure figcaption');
+
+
+        function cambiarImagen(imagen, tagImg, tagFigcaption) {
+            tagImg.src = imagen.url
+            tagImg.alt = imagen.title
+            tagFigcaption.textContent = imagen.title
+        }
+
+
+        // funciones que se usan como timers contadores de tiempo. setTimepout() setInterval()
+        // setTimeout es un delay, es un retraso lo que hay dentro de esa funcion tarda x tiempo en ejecutarse. SOLO SE EJECUTA UNA VEZ
+        /*
+            let contador = 1
+            setTimeout(() => {
+                cambiarImagen(imagenes[contador], img, figcaption)
+            }, 10000)
+        */
+
+        //setInterval() recibe los mismo parametros un callback y tiempo en milisegundos la diferencia es que esta funcion se repite constantemente, tenemos que poder pararla. Para pararla tenemos que poner un nombre meterla dentro de un varible. La funcion se para con clearInteval(nombreVariable)
+
+        let contador = 1;
+        const intervalo = setInterval(() => {
+            cambiarImagen(imagenes[contador], img, figcaption)
+            contador = (contador < imagenes.length - 1) ? contador + 1 : 0
+        }, 2000)
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones que reciben parametros</title>
+</head>
+
+<body>
+
+
+    <script>
+        var numero1 = Number(prompt('Dime el primer numero'));
+        var numero2 = Number(prompt('Dime el segundo numero'));
+
+        function sumar(numero1, numero2) {
+            var resultado = numero1 + numero2
+            console.log(resultado)
+        }
+
+        sumar(12, 6);
+        sumar(numero1, numero2)
+        sumar(91, 9);
+
+
+        // una funcion puede parametros obligatorios y optativos. En un funcion primero declaro todos los parametros obligatorios y luego todos lo optativos. En el momento que tenga un parametro optativos todos los siguiente tiene obligacion de ser optativos
+
+        function saludar(nombre = 'Mauricio', apellido = 'Lopez') {
+            console.log(`Hola ${nombre} ${apellido}`)
+        }
+
+        var nombre = 'Leticia'
+
+        saludar('Perez', 'Juan')
+        saludar()
+
+
+
+
+    </script>
+
+</body>
+
+</html>

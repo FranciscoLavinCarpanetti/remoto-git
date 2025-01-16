@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+
+<body>
+
+    <script>
+
+        /*
+            ## Ejercicio 7: Intercambio de valores
+                1. Declara dos variables `a` y `b` con valores distintos.
+                2. Intercambia los valores de a=>b y de b=>a:
+                3 . Ejemplo: a = 5, b = 10 => a = 10, b = 5   
+        */
+
+        var a = 12;
+        var b = "hola";
+        var temp = a;
+        a = b;
+        b = temp;
+
+        console.log('a', a);
+        console.log('b', b);
+
+        // shortland operacion corta que me permite hacer esto
+
+        var x = 12;
+        var y = 'adios';
+
+        [x, y] = [y, x]
+
+        console.log('x', x);
+        console.log('y', y);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

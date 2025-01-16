@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Dados 54321 segundos calcular la cantidad de horas minutos y segundos que hay en dicha cantidad de segundos. Teneis que comprobar que funciona para cualquier cantidad de segundos
+        // 15 horas 5 minutos 21 segundos
+
+        var segundos = 123456;
+
+        var horas = 0;
+        var minutos = 0;
+        var segundosRestantes = 0;
+
+
+        horas = segundos / (60 * 60)
+        horas = parseInt(horas);
+
+
+        segundosRestantes = segundos % (60 * 60)
+
+        minutos = segundosRestantes / 60;
+        minutos = parseInt(minutos)
+
+        segundosRestantes = segundosRestantes % 60;
+
+        console.log(`En ${segundos} segundos tenemos ${horas} horas, ${minutos} minutos y ${segundosRestantes} segundos`)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

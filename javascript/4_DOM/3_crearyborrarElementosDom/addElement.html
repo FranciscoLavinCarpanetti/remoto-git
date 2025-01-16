@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+
+            .oferta {
+                color: green
+            }
+        }
+    </style>
+    <script>
+        const productos = [
+            { title: 'Leche desnatada', price: 2, oferta: true },
+            { title: 'Huevos', price: 6.75, oferta: false },
+            { title: 'Carne', price: 12.54, oferta: true },
+            { title: 'Pescado', price: 22.9, oferta: false },
+            { title: 'Cereales', price: 1, oferta: false },
+            { title: 'Yogures', price: 3, oferta: true },
+            { title: 'Tomates', price: 2.34, oferta: false },
+            { title: 'Comino', price: 1, oferta: true },
+        ]
+
+    </script>
+</head>
+
+<body>
+
+    <h1>Lista de la compra</h1>
+    <section class="listado">
+        <!-- <article class="producto">
+            <h3>Nombre Articulo</h3>
+            <p>Precio: <span class="oferta">23€</span></p>
+        </article>
+        <article class="producto">
+            <h3>Nombre Articulo</h3>
+            <p>Precio: <span>23€</span></p>
+        </article> -->
+    </section>
+
+
+    <script>
+
+        const sectionCompra = document.querySelector('.listado');
+
+
+        /**
+        <article class="producto">
+            <h3>Nombre Articulo</h3>
+            <p>Precio: <span>23€</span></p>
+        </article>
+
+        */
+        function printOneItem(item, dom) {
+            const article = document.createElement('article') // <article></article>
+            article.classList.add('producto') // <article class="producto"></article>
+
+            const h3 = document.createElement('h3') // <h3></h3>
+            h3.textContent = item.title; // <h3>Leche desnatada</h3>
+
+            const span = document.createElement('span'); //<span></span>
+            span.textContent = item.price + "€" // <span>2€</span>
+            if (item.oferta) {
+                span.classList.add('oferta') // <span class="oferta">2€</span>
+            }
+
+            const p = document.createElement('p'); //<p></p>
+            p.textContent = 'Precio: ' //<p>Precio: </p>
+
+            p.appendChild(span) // <p>Precio: <span>23€</span></p>
+            article.append(h3, p) //  <article class="producto"><h3>Nombre Articulo</h3><p>Precio: <span>23€</span></p></article>
+
+            dom.appendChild(article)
+
+        }
+
+
+        function printAllItems(list, dom) {
+            list.forEach(item => printOneItem(item, dom))
+        }
+
+        printAllItems(productos, sectionCompra)
+    </script>
+</body>
+
+</html>

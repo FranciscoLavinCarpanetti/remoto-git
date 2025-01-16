@@ -1,0 +1,33 @@
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    display: inline-block;
+}
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(225, 174, 65);
+    display: inline-block;
+
+}
+.caja3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(65, 225, 113);
+    display: inline-block;
+
+}
+
+header li{
+    display: inline-block;
+}
+
+header .li3{
+    padding: 20px;
+    background-color: aqua;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(191, 16, 16);
+}

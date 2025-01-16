@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio CSS</title>
+    <!-- En la etiqueta <style> van nuestras reglas de CSS-->
+    <style>
+      /*Selectores globales */
+      p {
+        font-size: 25px;
+      }
+
+      h2 {
+        margin: 70px;
+      }
+
+      body {
+        background-color: cadetblue;
+      }
+      /*Selectores ID */
+      #parrafo1 {
+        color: chocolate;
+      }
+      #parrafo2 {
+        color: red;
+      }
+      #parrafo3 {
+        color: blue;
+      }
+      #encabezado1 {
+        /*La propiedad border: recibe tres valores separados por espacios el primer valor es el ancho del borde, el segundo valor es el estilo (por lo general usaremos solid) y el ultimo valor es el color */
+        border: 3px solid rgb(0, 0, 0);
+      }
+      #caja {
+        background-color: brown;
+        border: 2px solid black;
+      }
+      #span1 {
+        color: blueviolet;
+      }
+      #span2 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="encabezado1">ENCABEZADO NUMERO UNO</h1>
+    <h2 id="encabezado2">ENCABEZADO NUMERO DOS</h2>
+    <h2 id="encabezado3">ENCABEZADO NUMERO TRES</h2>
+
+    <div id="caja">
+      <p id="parrafo1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sed esse
+        itaque, hic praesentium autem ducimus at harum quasi a unde dolor nemo
+        accusamus dolore nostrum ipsa ad voluptates deleniti!
+      </p>
+      <p id="parrafo2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+        incidunt. <span id="span1"> Harum, voluptas.</span> Praesentium nemo,
+        quisquam expedita dolore necessitatibus repellat est sequi voluptatem ab
+        laudantium iure unde distinctio
+        <span id="span2">accusantium repudiandae.</span> Alias.
+      </p>
+
+      <p id="parrafo3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+        laudantium dolorum explicabo doloribus et accusantium, id expedita
+        deleniti eius, nam voluptas aut veritatis reiciendis, totam facilis a.
+        Error, numquam fuga.
+      </p>
+    </div>
+  </body>
+</html>

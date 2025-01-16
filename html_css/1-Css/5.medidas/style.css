@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.fijas {
+    width: 400px;
+    background-color: blue;
+}
+
+.maximas {
+    max-width: 400px;
+    max-height: 350px;
+    background-color: rosybrown;
+    overflow: scroll;
+}
+
+.minimas {
+    min-width: 200px;
+    min-height: 300px;
+    background-color: yellow;
+}
+
+.porcentajes {
+    width: 80%;
+    background-color: hotpink;
+}

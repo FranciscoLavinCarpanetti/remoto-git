@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+cursor: url('../../10.pseudoselectores/images/flecha.png'), auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+.imagen {
+    max-width: 500px;
+    margin: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.imagen figcaption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.708);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+.wraper{
+    position: absolute;
+    transition: 2s;
+}
+.imagen:hover figcaption {
+    opacity: 1;
+
+}
+
+.imagen:hover .wraper{
+    top: 50%;
+    left: 50%;
+}

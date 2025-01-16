@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // crear un objeto json con vuestros datos personales, nombre, apellidos, edad, estadocivil, altura, email, telefono
+
+        // quiero que pinteis un listado ul 
+        /* - nombre: Juan Antonio
+           - apellidos: Perez Jarillo
+           - edad: 42
+       */
+
+        const datosPersonales = {
+            nombre: 'Juan Antonio',
+            apellidos: 'Perez Jarillo',
+            edad: 42,
+            estadoCivil: 'casado',
+            altura: 185,
+            email: 'jj@gmail.com',
+            telefono: '666777888'
+        }
+
+
+        function pintarDatos(datosUsuario) {
+            document.write(`<article>
+                        <h3>${datosUsuario.nombre} ${datosUsuario.apellidos}</h3> 
+                            <ul>
+                                <li>Edad: ${datosUsuario.edad}</li>
+                                <li>Email: ${datosUsuario.email}</li>
+                            </ul>
+            </article>`)
+        }
+
+        pintarDatos(datosPersonales)
+        pintarDatos(datosPersonales)
+        pintarDatos(datosPersonales)
+        pintarDatos(datosPersonales)
+
+
+    </script>
+
+</body>
+
+</html>

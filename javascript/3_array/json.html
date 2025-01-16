@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON - JavaScript Object Notation</title>
+</head>
+
+<body>
+
+    <script>
+
+        // JSON se conoce como array asociativo, eliminamos el concepto de posicion para empezar a hablar de clave => valor.
+
+        const alumno = {}
+
+        const producto = {
+            'nombre': 'Leche desnatada',
+            'precio': 12.5,
+            'cantidad': 10,
+            'stock': true
+        }
+
+        const otroProducto = {
+            nombre: 'Manzanas',
+            precio: 2.5,
+            cantidad: 10,
+            stock: true
+        }
+
+        //pintar todo el producto por consola
+        console.log(producto)
+
+        // para leer los elementos de un objeto tengo 2 nomenclaturas
+        //nomenclatura de corchetes
+        console.log(producto['cantidad']) // 10
+        console.log(otroProducto['nombre']) // Manzanas
+
+        let clave = 'precio'
+        console.log(otroProducto[clave]) //2.5
+
+
+        //nomenclatura de punto
+
+        console.log(producto.precio) //12.5
+        console.log(producto.nombre) //Leche desnatada
+
+        // error esto no se puede hacer con la nomenclatura de punto
+        //let valor = 'nombre'
+        // console.log(producto.valor)
+
+        //me permite añadir elemento despues de ser creados
+        producto.fechaCaducidad = '14/03/2024';
+        producto['envasado'] = 'Octubre'
+
+        console.log(producto)
+
+        // pero tambien se recorre a pesar de no tener posicion. for in
+
+        for (let clave in producto) {
+            console.log(clave, producto[clave])
+        }
+
+
+    </script>
+
+</body>
+
+</html>

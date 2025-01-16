@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Includes</title>
+</head>
+
+<body>
+
+    <script>
+
+        //includes: es una funcion que sirve tanto para array como para string. Su objetivo es saber si un elemento esta incluido dentro de una cadena o de un array. Se puede combinado con filter o find. Includes solo devuelve true o false
+
+        let texto = "En un lugar de la mancha"
+
+        let busqueda = 'lugar'
+
+        console.log(texto.toLowerCase().includes(busqueda.toLowerCase()))
+        // startsWith , endsWith
+        console.log(texto.startsWith('Hola')) //el texto empieza por
+        console.log(texto.endsWith('mancha')) //el texto empieza por
+
+
+        const animales = ['Leon', 'Gato', 'perro', 'Periquito']
+        let busquedaAnimal = 'Perro'
+        let resultado = animales.includes(busquedaAnimal.toLowerCase()) //False
+        console.log(resultado)
+
+
+        const productos = [
+            {
+                title: 'Pantalon de Lino',
+                price: 12
+            },
+            {
+                title: 'Chaqueta de pana',
+                price: 60
+            },
+            {
+                title: 'Camisa de lino y algodon',
+                price: 30
+            },
+            {
+                title: 'Bermudas',
+                price: 12
+            }
+        ]
+
+        function findByMaterial(lista, material) {
+            const listaFiltrada = lista.filter(producto => producto.title.toLowerCase().includes(material.toLowerCase()))
+            console.log(listaFiltrada)
+        }
+
+        findByMaterial(productos, 'lino')
+
+    </script>
+
+</body>
+
+</html>

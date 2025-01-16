@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables root html</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        :root {
+            --colorPrincipal: blue;
+            --fontSize: 0.5rem;
+            --font: 'Times', sans-serif;
+            --breakpointTablet: 1004px;
+            --gap: 10px;
+        }
+
+        .color {
+            color: var(--colorPrincipal);
+        }
+
+        .colorTitulo {
+            color: white;
+            background-color: var(--colorPrincipal);
+            font-family: var(--font);
+        }
+
+
+        /*p.texto {
+            font-size: 20px;
+        }
+
+        h3.texto {
+            font-size: 60px;
+        }
+            */
+
+        .texto {
+            font-size: calc(var(--fontSize) * 10);
+        }
+
+        .fs-30 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p class="texto color">Lorem <span class="texto">ESTO</span>ipsum dolor sit amet consectetur adipisicing elit.
+        Perspiciatis quidem alias
+        repellendus nam ipsam non, enim architecto obcaecati laborum nobis possimus porro expedita et corrupti quasi
+        eveniet nihil id provident.</p>
+
+    <section>
+        <h3 class="texto colorTitulo">Titulo de la seccion</h3>
+        <p class="fs-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugit nulla earum
+            doloremque autem, repudiandae sequi corporis quia nemo consectetur mollitia officia odio ad ipsam numquam
+            illo quasi dolore vitae.</p>
+    </section>
+
+
+
+</body>
+
+</html>

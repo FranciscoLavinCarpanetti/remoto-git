@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // portero de discoteca. Si eres mayor de edad pasas y si no no pasas. Ojo ser mayor de edad es distinto depediendo del pais.
+
+        var edadPersona = Number(prompt('dime tu edad: '))
+        var edadCorte = 18;
+        var edadMaxima = 100;
+        var edadMinima = 0;
+
+        // formar correcta seria un condicional anidado.
+
+        if (edadPersona >= edadMinima && edadPersona < edadCorte) {
+            console.log('Un vasito de leche y a la cama')
+        } else if (edadPersona >= edadCorte && edadPersona <= edadMaxima) {
+            console.log('Bienvenido puedes pasar')
+        } else {
+            console.log('edad no valida')
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

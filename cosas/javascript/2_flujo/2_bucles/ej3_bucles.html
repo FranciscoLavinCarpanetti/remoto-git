@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        /*
+           *
+          ***
+         *****
+        *******
+       
+        */
+
+        var filas = 5;
+        var texto = "**"
+        var resultado = "";
+        var html = ""
+
+        for (var i = 1; i <= filas; i++) {
+            if (i === 1) {
+                resultado = "*"
+            } else {
+                resultado = resultado + texto;
+            }
+            html = html + `<p style="text-align: center">${resultado}</p>`
+        }
+        document.write(html)
+
+
+    </script>
+
+</body>
+
+</html>

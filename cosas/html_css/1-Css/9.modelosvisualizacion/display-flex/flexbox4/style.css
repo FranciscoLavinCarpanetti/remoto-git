@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+section article {
+    background-color: blueviolet;
+    color: white;
+    height: 100px;
+    text-align: center;
+    align-content: center;
+}
+
+#caja1, #caja3 {
+    width: calc(25% - 10px);
+}
+
+#caja2{
+    width: calc(50% - 10px);
+}
+
+#caja4 {
+    width: calc(75% - 10px);
+    height: auto;
+    padding: 20px;
+}
+
+.otro {
+    width: 70%;
+    background-color: aqua;
+    margin: 0 auto;
+}

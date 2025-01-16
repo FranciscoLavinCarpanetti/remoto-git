@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        // para cadenas de caracteres
+
+        var texto = "En un lugar de la mancha";
+        var textoMayusculas = texto.toUpperCase()
+        var textoMinuscula = texto.toLowerCase()
+        // no es igual console.log('A' == 'a')
+
+        console.log(texto)
+        console.log(textoMayusculas)
+        console.log(textoMinuscula)
+
+        // para numeros. Math es una libreria de javascript nativo que me permite operaciones matematicas complejas
+        //https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+        console.log(Math.PI) // numero pi
+        console.log(Math.sqrt(256)) // la raiz cuadrada de 256
+        console.log(Math.ceil(3.456)) // 4
+        console.log(Math.floor(3.456)) // 3
+        console.log(Math.trunc(3.5467)) // se queda con la parte entera 3
+        console.log(Math.max(1, 23, 4, 5345, 654, 67, 3, 54, 7, 8))
+        console.log(Math.min(1, 23, 4, 5345, 654, 67, 3, 54, 7, 8))
+
+        // sacar un numero aleatorio
+        Math.random() //entre 0 y 1 sin incluir el 1 es decir de 0 a 0.99999999999
+        var numeroAleatorio = Math.random() * 101
+        console.log(parseInt(numeroAleatorio))
+
+
+        var numero = 3.12342354436
+        console.log(Number(numero.toFixed(3)));
+
+
+        var nota = prompt('Dime la nota del alumno: ');
+        //console.log(nota[2])
+        notaCorta = Number(nota.substring(0, 5))
+        console.log(notaCorta)
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

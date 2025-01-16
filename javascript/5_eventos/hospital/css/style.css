@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 20px;
+    background-color: lightblue;
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+#pacientes .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#pacientes article {
+    padding: 10px;
+    margin: 10px;
+    background-color: beige;
+    border: 1px solid black;
+
+    ul {
+        list-style: none;
+    }
+
+    .enfermedad {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    #pacientes .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1004px) {
+    #pacientes .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

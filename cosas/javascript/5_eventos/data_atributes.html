@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const colores = [
+            { color: 'blue', position: 200, nombre: 'azul' },
+            { color: 'red', position: 300 },
+            { color: 'green', position: 500 },
+        ]
+    </script>
+</head>
+
+<body>
+
+    <ul>
+        <li onclick="cambiarColor(this)" data-colorcito="blue" data-posicion="200">Azul</li>
+        <li onclick="cambiarColor(this)" data-colorcito="lightgreen" data-posicion="400">Verde</li>
+        <li onclick="cambiarColor(this)" data-colorcito="tomato">Rojo</li>
+    </ul>
+
+    <select name="" id="">
+        <option value="">Selecciona una opcion</option>
+        <option value="m">madrid</option>
+        <option value="v">valladolid</option>
+    </select>
+
+    <script>
+
+        function cambiarColor(dom) {
+            // que cuando hagamos sobre cada de los elementos del listado cambiar el color de fondo de body.
+            let color = dom.dataset.colorcito;
+            let posicion = dom.dataset.posicion ? dom.dataset.posicion : '0px';
+            dom.style.marginLeft = posicion + 'px';
+            document.body.style.backgroundColor = color;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

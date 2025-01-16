@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .barra {
+            background-color: black;
+            padding: 10px;
+            color: black;
+
+            div {
+                background-color: bisque;
+                padding: 2px;
+                width: 0%;
+                transition: 0.2s;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="barra">
+        <div>0%</div>
+    </div>
+
+    <script>
+        const loading = document.querySelector('.barra div');
+
+        let contador = 0;
+        const intervalo = setInterval(() => {
+            if (contador < 100) {
+                contador++
+                loading.style.width = contador + '%'
+                loading.textContent = contador + '%'
+            }
+        }, 100)
+
+        loading.style.backgroundColor = 'tomato'
+        //loading['style']['border-radius'] = '20px'
+
+
+    </script>
+
+</body>
+
+</html>

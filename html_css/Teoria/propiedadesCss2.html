@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Seleccionamos el body con el selector global */
+      /*Agregamos la propiedad que queremos cambiar (background-color) */
+      /*Le damos valor a la propiedad que queremos cambiar */
+      /*La propiedad background-color sirve para cambiar el color de fondo del elemento seleccionado */
+      body {
+        background-color: rgb(216, 204, 255);
+      }
+
+      /*Selecciono TODOS los elementos h1 con el selector global h1 */
+      /*Agregamos la propiedad que queremos cambiar (color:) */
+      /*La propiedad color sirve para cambiar el color del texto del elemento seleccionado */
+      h1 {
+        color: blue;
+      }
+      /*Selecciono TODOS los elementos h1 con el selector global h2 */
+      /*Agregamos la propiedad que queremos cambiar (color:) */
+      /*La propiedad color sirve para cambiar el color del texto del elemento seleccionado */
+      h2 {
+        color: red;
+      }
+
+      /*Separados por punto y coma ";" agregamos una propiedad nueva para cambiar */
+      /*La propiedad font-size nos sirve para cambiar el tamaño de la letra */
+      /*La propiedad font-size recibe valores en px (pixeles) */
+      /*La propiedad margin-top: nos sirve para cambiar el margen de arriba */
+      /*La propiedad margin-bottom: nos sirve para cambiar el margen de abajo */
+      /*La propiedad margin-top: nos sirve para cambiar el margen de arriba */
+      /*La propiedad margin-right: nos sirve para cambiar el margen de la derecha */
+      /*Las propiedades de margenes (margin,margin-top,margin-bottom, margin-right,margin-left) reciben valores en px (pixeles) */
+      #principal2 {
+        border: 2px dashed black;
+        color: darkmagenta;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 10px;
+      }
+      /*La propiedad background-color: nos sirve para cambiar el color de fondo del elemento seleccionado */
+      /*La propiedad margin: nos sirve para darle margen al elemento por arriba, abajo, izquierda y derecha. */
+      #principal {
+        border: 5px double black;
+        background-color: rgb(255, 0, 0);
+        margin: 50px;
+      }
+      /*La propiedad padding: nos sirve para definir el espacio al rededor del contenido del elemento */
+      /*La propiedad padding-top: nos sirve para definir el espacio de arriba al rededor del contenido del elemento */
+      /*La propiedad padding-bottom: nos sirve para definir el espacio de abajo al rededor del contenido del elemento */
+      /*La propiedad padding-left: nos sirve para definir el espacio de la izquierda al rededor del contenido del elemento */
+      /*La propiedad padding-right: nos sirve para definir el espacio de la derecha al rededor del contenido del elemento */
+      #secundario {
+        border: 2px dotted rgb(2, 255, 23);
+        padding: 10px;
+      }
+      /*La propiedad border: nos permite crear el borde del elemento, y recibe tres valores separados por espacios, el primer valor es el tamaño del borde en px, el segundo valor es el estilo del borde (solid), el tercer valor define el color del borde */
+      #secundario2 {
+        border: 2px solid black;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="principal">MI ENCABEZADO</h1>
+    <h1 id="principal2">MI ENCABEZADO DOS</h1>
+    <h2 id="secundario">MI ENCABEZADO H2</h2>
+    <h2 id="secundario2">MI ENCABEZADO H2</h2>
+  </body>
+</html>

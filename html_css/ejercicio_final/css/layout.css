@@ -1,0 +1,94 @@
+/* variables que podremos usar en nuestro css */
+:root {
+    --primary-font: "Athiti", serif;
+    --secondary-font: "Arbutus Slab", serif;
+    --primary-color: #d0a772;
+    --secondary-color: #f8f9fa;
+    --text-color: #666;
+    --gap: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+}
+
+/* que las imagenes se acepten a su contenedor, necesario para imagenes responsive */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* contenedor encorsetado */
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.btn {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: transparent;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
+
+main section {
+    margin: 3.75rem 0rem;
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+
+        span {
+            color: var(--primary-color)
+        }
+    }
+
+    h5 {
+        text-align: center;
+        margin: 1rem 0;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul li {
+
+        display: inline-block;
+        margin: 0px 5px;
+
+        a {
+            color: white;
+        }
+    }
+
+}

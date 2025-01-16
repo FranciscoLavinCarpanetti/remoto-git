@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays multidimensionales</title>
+</head>
+
+<body>
+
+    <script>
+
+        // es array donde los elementos  son array, un array de arrays.
+
+        const aves = ['aguila', 'colibri', 'cuervo'];
+        const felinos = ['tigre', 'leon', 'pantera', 'leopardo']
+        const reptiles = ['serpiente', 'rana', 'lagarto']
+
+        const zoo = [felinos, reptiles, aves]
+        //console.log(zoo)
+
+        // si quiero el primer elemento
+        //console.log(zoo[0]) //felinos
+        //si quiero pintar la rana
+        //console.log(zoo[2][1])
+
+        //para recorrer un arrray multidimensional necesito dos contadores i, j  i recorre la especie y j el animal
+
+        for (let i = 0; i < zoo.length; i++) {
+            for (let j = 0; j < zoo[i].length; j++) {
+                console.log(zoo[i][j])
+            }
+        }
+        console.log('--------')
+
+        for (let especie of zoo) {
+            for (let animal of especie) {
+                console.log(animal)
+            }
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

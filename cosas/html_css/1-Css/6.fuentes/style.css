@@ -1,0 +1,26 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+ */
+
+@font-face {
+    font-family: "tangerine";
+    src: url(./font/Tangerine/Tangerine-Regular.ttf);
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: "tangerine";
+    src: url(./font/Tangerine/Tangerine-Bold.ttf);
+    font-weight: 700;
+}
+
+
+ .letra{
+    font-family: "tangerine", cursive;
+    font-weight: 400;
+
+  } 
+  
+  .letra-bold {
+    font-family: "tangerine", cursive;
+    font-weight: 700;
+  }

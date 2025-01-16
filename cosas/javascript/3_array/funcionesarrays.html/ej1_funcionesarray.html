@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+
+<body>
+    <script>
+
+        //ver el numero de veces que se repite un elemento dentro del array
+
+        const numeros = [1, 2, 3, 4, 5, 2, 4, 6, 78, 2, 56, 2, 89, 34, 2]
+
+        function getQuantityNumber(lista, busqueda) {
+            const numeroRepetido = lista.filter(numero => numero === busqueda)
+            console.log(numeroRepetido.length)
+        }
+
+        getQuantityNumber(numeros, 8)
+    </script>
+
+
+</body>
+
+</html>

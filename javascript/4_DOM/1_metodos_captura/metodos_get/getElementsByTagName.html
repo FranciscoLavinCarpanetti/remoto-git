@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByTagName() dame los elementos con cierta etiqueta pasada por parametro</title>
+</head>
+
+<body>
+
+    <p id="parrafo1">Hola</p>
+    <div>
+        <p class="parrafos">Adios</p>
+    </div>
+    <section>
+        <article>
+            <p class="amigosdelmetal">Hasta luego</p>
+        </article>
+    </section>
+    <p>Otro p</p>
+
+
+    <script>
+
+        const parrafos = document.getElementsByTagName('p');
+        console.log(parrafos)
+        parrafos[0].textContent = 'Estoy cambiado el texto'
+        parrafos[1].innerHTML = '<strong>TEXTO EN NEGRITA</strong>'
+
+        for (let parrafo of parrafos) {
+            parrafo.textContent = "Juan Antonio"
+        }
+    </script>
+</body>
+
+</html>

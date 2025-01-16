@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora POO</title>
+    <script src="./js/calculadora.js"></script>
+</head>
+
+<body>
+
+    <form id="calculadora">
+        <input type="number" name="numero1">
+        <input type="number" name="numero2">
+        <select name="operacion">
+            <option value="">Selecciona una operación</option>
+            <option value="sumar">SUMAR</option>
+            <option value="restar">RESTAR</option>
+            <option value="multiplicar">MULTIPLICAR</option>
+        </select>
+        <input type="submit" value="calcular">
+    </form>
+    <h1>RESULTADO: <span id="resultado"></span> </h1>
+
+
+    <script src="./js/eventos.js"></script>
+</body>
+
+</html>

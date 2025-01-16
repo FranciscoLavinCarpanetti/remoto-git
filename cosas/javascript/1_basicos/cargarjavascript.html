@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- zona 1: final head-->
+    <script>
+        alert('hola');
+
+    </script>
+    <script src="./js/ficherohead.js"></script>
+</head>
+
+<body>
+
+    <h2>Titulo de pagina</h2>
+    <h2>otro titulo</h2>
+
+    <!-- zona 2: final body despues de todo el html -->
+    <script>
+        alert('adios')
+        document.getElementsByTagName('h2')[0].textContent = 'Hola k ase'
+    </script>
+    <script src="./js/ficherofooter.js"></script>
+
+</body>
+
+</html>

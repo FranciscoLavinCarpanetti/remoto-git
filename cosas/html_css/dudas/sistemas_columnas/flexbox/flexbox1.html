@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox - display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            width: 100%;
+        }
+
+        .container {
+            max-width: 50rem;
+            margin: 0 auto;
+        }
+
+        .rojo {
+            background-color: tomato;
+            margin-bottom: 10px;
+        }
+
+        .flex {
+            display: flex;
+            gap: 10px;
+            /* si quiero decidir que ancho tienen mis articulos uso flex-wrap: wrap, nowrap */
+            flex-wrap: wrap;
+        }
+
+
+        .flex article {
+            width: calc(100% - 10px);
+            background-color: lightblue;
+            height: 200px;
+        }
+
+        @media(width >=768px) {
+            .flex article {
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media(width >=1200px) {
+            .flex article {
+                width: calc(33.333% - 10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Titulo de pagina</h1>
+    <section class="container-fluid rojo">
+        <h2>Titulo de seccion</h2>
+        <div class="flex">
+            <article>
+                1
+            </article>
+            <article>
+                2
+            </article>
+            <article>
+                3
+            </article>
+        </div>
+    </section>
+    <section class="container rojo">
+        <h2>Titulo de seccion</h2>
+        <div class="flex">
+            <article>
+                1
+            </article>
+            <article>
+                2
+            </article>
+            <article>
+                3
+            </article>
+        </div>
+    </section>
+
+    <div>
+        <p>texto</p>
+    </div>
+</body>
+
+</html>

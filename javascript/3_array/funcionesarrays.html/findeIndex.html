@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindIndex</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        const valores = ['Juan', 'Pepe', 'Lucia', 'Marta', 'Macarena']
+
+        //findIndex funciona como find busca el primer elemento que cumpla la condicion y devuelve su posicion. Si no encuentra ninguno devuelve -1.
+
+        let posicion = valores.findIndex(nombre => nombre.length >= 5)
+        console.log(posicion)
+
+        const alumnos = [
+            { nombre: 'Juan Antonio', edad: 41 },
+            { nombre: 'Lucia', edad: 26 },
+            { nombre: 'Marta', edad: 12 },
+            { nombre: 'Rodrigo', edad: 32 },
+            { nombre: 'Pepe', edad: 65 },
+        ]
+
+        let posicionAlumno = alumnos.findIndex(alumno => alumno.edad === 12)
+        alumnos.splice(posicionAlumno, 1)
+        console.log(alumnos)
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+alert('adios desde el footer')

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+
+<body>
+
+    <script>
+
+        //callback es un funcion que se pasa como parametro de otra.
+
+        // dos tipos de callback declaracion y ejecucion.
+
+
+        //callback ejecución
+        function saludar(nombre) {
+            document.write(`<h1>Hola, Bienvenido ${nombre}</h1>`);
+        }
+
+
+        function getUser() {
+            let usuario = 'Juan Ignacio';
+            return usuario;
+        }
+
+        saludar(getUser())
+
+        // callback de declaracion -> se pasa como parametro la declaracion de la funcion
+
+        function restar(n1, n2) {
+            return n1 - n2;
+        }
+
+        const sumar = (n1, n2) => n1 + n2;
+
+        function calcular(fn) {
+            let numero = 1;
+            let numero2 = 12;
+            let resultado = fn(numero, numero2)
+            console.log(resultado);
+        }
+
+        calcular(restar)
+        calcular(sumar)
+        calcular((n1, n2) => n1 * n2)
+
+
+    </script>
+
+</body>
+
+</html>

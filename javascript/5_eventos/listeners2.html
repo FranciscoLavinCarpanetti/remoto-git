@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="color" id="selectColor">
+    <div class="caja"></div>
+
+
+    <script>
+        //todos los elementos de tipo formulario tienen una propiedad value (selectColor.value) que me da el valor que escribo que selecciono, etc.
+
+        const input = document.querySelector('#selectColor');
+        const caja = document.querySelector('.caja');
+
+        input.addEventListener('input', cambiarColor);
+
+        function cambiarColor(event) {
+            let color = event.target.value;
+            caja.style.backgroundColor = color;
+        }
+
+
+    </script>
+</body>
+
+</html>

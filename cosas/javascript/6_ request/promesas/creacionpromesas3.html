@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // creacion de la promesa
+        function dameNota() {
+            return new Promise((resolve, reject) => {
+                //logica promesa
+                setTimeout(() => {
+                    let nota = Math.random() * 15
+                    if (nota >= 0 && nota < 5) {
+                        resolve('suspenso')
+                    } else if (nota >= 5 && nota <= 10) {
+                        resolve('aprobado')
+                    } else {
+                        reject('nota no valida')
+                    }
+                }, 1000)
+
+            })
+        }
+
+        function obtenerCertificado(calificacion) {
+            return new Promise((resolve, reject) => {
+                if (calificacion === 'aprobado') {
+                    resolve('Has aprobado el curso con ' + calificacion)
+                } else {
+                    resolve('Has suspendido el curso ' + calificacion)
+                }
+            })
+        }
+
+        //consumición de la promesa
+        async function init() {
+            try {
+                let nota = await dameNota()
+                let certificado = await obtenerCertificado(nota)
+                console.log(certificado)
+            } catch (error) {
+                console.log(error)
+            }
+        }
+        init()
+        //let certificado = obtenerCertificado(nota);
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

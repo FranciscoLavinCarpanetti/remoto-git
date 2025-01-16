@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    background-color: aquamarine;
+    height: 400px;
+    align-items: center;
+    justify-content: center
+    /* align-items: self-end; */
+    /* align-items: start; */
+}
+
+section article {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100px;
+    align-content: center;
+    text-align: center;
+}
+
+section .caja1{
+    align-self: flex-start;
+}
+
+section .caja2{
+    align-self: center;
+}
+section .caja3{
+    align-self: flex-end;
+}

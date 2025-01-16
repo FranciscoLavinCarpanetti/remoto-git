@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //find es una funcion que me permite buscar un elemento en array en base a una condicion. Me devuelve el primero elemento que cumple dicha condicion.
+
+        const valores = [1, 2, 47, 35, 21, 26, 24, 20]
+
+        // quiero buscar el primer elemento divisible por 3
+
+        //callback condicion
+
+        const primerDivisiblePor3 = valores.find(numero => numero % 3 === 0)
+
+        console.log(primerDivisiblePor3)
+
+        const alumnos = [
+            { nombre: 'Juan Antonio', edad: 41 },
+            { nombre: 'Lucia', edad: 26 },
+            { nombre: 'Marta', edad: 12 },
+            { nombre: 'Rodrigo', edad: 32 },
+            { nombre: 'Pepe', edad: 65 },
+        ]
+
+        function filtrarPorEdad(lista, ageMin) {
+            let alumnoBuscado = lista.find(alumno => alumno.edad < ageMin)
+            console.log(alumnoBuscado)
+        }
+
+        filtrarPorEdad(alumnos, 18)
+
+
+    </script>
+
+
+
+</body>
+
+</html>

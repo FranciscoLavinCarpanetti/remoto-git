@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+        //map() aplica a cada elemento de la lista la misma operacion. Ojo no necesariamente tiene que ser una operacion matematica.No modifica el array original.
+
+        const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        const dobles = numeros.map(numero => numero * 2)
+        console.log(dobles)
+
+        // me interesará coger una array y mapearlo a miniscula
+        const ciudades = ['MaDRid', 'BarCeloNA', 'CoRUÑa', 'VallAdoLID'];
+
+        const ciudadesMiniscula = ciudades.map(ciudad => ciudad.toLowerCase())
+
+        console.log(ciudades)
+        console.log(ciudadesMiniscula)
+
+
+        const listaCompra = [
+            { title: 'LechE', price: 2, cantidad: 7.45 },
+            { title: 'PaN', price: 0.25, cantidad: 2.45 },
+            { title: 'hUEVos', price: 6, cantidad: 2.32 },
+            { title: 'caRNe', price: 12.5, cantidad: 1.2 },
+            { title: 'peSCado', price: 7, cantidad: 3.8 },
+        ]
+
+        const otraLista = listaCompra.map(producto => {
+            return newProduct = {
+                title: producto.title.toLowerCase(),
+                price: producto.price,
+                cantidad: parseInt(producto.cantidad)
+            }
+        })
+        console.log(otraLista)
+
+    </script>
+</body>
+
+</html>

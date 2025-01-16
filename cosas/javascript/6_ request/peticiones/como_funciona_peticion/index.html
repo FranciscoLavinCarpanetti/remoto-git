@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir datos a una API</title>
+</head>
+
+<body>
+
+
+    <script>
+        //metodo amazon.
+
+        const url = "https://jsonplaceholder.typicode.com/users"
+
+        const pedido = new XMLHttpRequest()
+
+        //abrir amazon y pedir
+        pedido.open('get', url)
+
+        //enviar el pedido
+        pedido.send()
+
+        //estamos atentos a los posibles cambios del pedido.
+
+        pedido.addEventListener('load', cargarData)
+
+        function cargarData(event) {
+            console.log(JSON.parse(event.target.response))
+        }
+    </script>
+</body>
+
+</html>

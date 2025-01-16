@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header ul li:last-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul id="menu">
+                <li>Home</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li>Aviso Legal</li>
+                <li>Cookies</li>
+            </ul>
+        </nav>
+    </footer>
+
+
+    <script>
+        /*
+        let headers = document.getElementsByTagName('header');
+        let miHeader = headers[0];
+
+        // dentro de miHeader hay ul y quiero capturarlo
+        let uls = miHeader.getElementsByTagName('ul');
+        let miUl = uls[0]
+
+        let lis = miUl.getElementsByTagName('li');
+
+        let miLi = lis[1];
+        miLi.textContent = 'He cambiado el texto'
+        */
+
+        //puedo usar reglas de css. QuerySelector me captura el primer elemento que cumpla la condicion entre parentesis.
+        let miLi = document.querySelector('#menu li')
+        miLi.textContent = "con querySelector"
+
+    </script>
+</body>
+
+</html>

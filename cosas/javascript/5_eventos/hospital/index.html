@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/data.js"></script>
+
+<body>
+
+    <header>
+        <!-- filtros y eventos -->
+        <form id="formAge">
+            <input type="number" placeholder="introduce edad min" name="agemin">
+            <input type="number" placeholder="introduce edad max" name="agemax">
+            <input type="submit" value="filtrar">
+        </form>
+        <hr>
+
+        <select name="" id="selectDiagnosis">
+            <option value="">Selecciona un dignostico</option>
+            <option value="gripe">Gripe</option>
+            <option value="asma">Asma</option>
+            <option value="sifilis">Sifilis</option>
+            <option value="cardiopatia">Cardiopatia</option>
+        </select>
+
+        <hr style="margin-bottom: 20px">
+
+        <form id="filtroCompleto">
+            <input type="number" placeholder="introduce edad min" name="agemin">
+            <input type="number" placeholder="introduce edad max" name="agemax">
+            <select name="enfermedad">
+                <option value="">Selecciona un dignostico</option>
+                <option value="gripe">Gripe</option>
+                <option value="asma">Asma</option>
+                <option value="sifilis">Sifilis</option>
+                <option value="cardiopatia">Cardiopatia</option>
+            </select>
+            <input type="submit" value="filtrar">
+        </form>
+
+    </header>
+    <main>
+        <section id="pacientes">
+            <h2>Listado de pacientes</h2>
+            <hr>
+            <div class="grid">
+                <!-- <article>
+                    <h3>Nombre completo del paciente</h3>
+                    <ul>
+                        <li>Edad: 43</li>
+                        <li>DNI: 456789V</li>
+                    </ul>
+                    <div class="enfermedad">
+                        ASMA
+                    </div>
+                </article> -->
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="./js/eventos.js"></script>
+</body>
+
+</html>

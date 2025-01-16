@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Selectores */
+
+      /*Selector global */
+      h2 {
+        /*Propiedades que quiero cambiar (color:) */
+        /*El valor de la propiedad color: es "red" */
+        /*Podemos tener tantas propiedades como necesitemos */
+        color: red;
+        border: 2px solid black;
+        text-align: right;
+      }
+
+      h2:hover {
+        background-color: yellow;
+        text-align: left;
+        border-radius: 50px;
+        transition: 3s;
+      }
+      /*Selector ID */
+      /*Si lo que queremos es cambiar los valores de las propiedades de un elemento en especifico utilizamos el selector de ID " # " seguida del nombre (#secundario) */
+      #secundario2 {
+        color: blue;
+        margin: 30px;
+        padding: 40px;
+        background-color: chocolate;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="principal">MI ENCABEZADO</h1>
+    <h1 id="principal2">MI ENCABEZADO DOS</h1>
+    <h2 id="secundario">MI ENCABEZADO H2</h2>
+    <h2 id="secundario2">MI ENCABEZADO H2</h2>
+  </body>
+</html>

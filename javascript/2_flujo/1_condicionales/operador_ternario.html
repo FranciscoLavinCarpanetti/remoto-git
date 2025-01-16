@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador ternario</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        //operador ternario. Se construyó para evitar el ambito de {}. No es mas que un condicial con secuencia de escape. Donde un unica variable toma un valor diferente dependiendo de la condicion.
+
+        var numero = 12;
+        var mensaje = "";
+
+        if (numero < 0) {
+            mensaje = 'es negativo'
+        } else {
+            mensaje = 'es positivo'
+        }
+
+        console.log(mensaje)
+
+        //operador ternario
+
+        var otromensaje = (numero < 0) ? "es negativo" : "es positivo";
+        console.log(otromensaje)
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // creacion de la promesa
+        const promesaNota = new Promise((resolve, reject) => {
+            //logica promesa
+            setTimeout(() => {
+                let nota = Math.random() * 15
+                if (nota >= 0 && nota < 5) {
+                    resolve('suspenso')
+                } else if (nota >= 5 && nota <= 10) {
+                    resolve('aprobado')
+                } else {
+                    reject('nota no valida')
+                }
+            }, 5000)
+
+        })
+
+        //consumición de la promesa
+
+        promesaNota
+            .then((string) => {
+                console.log(string)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
+        console.log('haciendo cositas')
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

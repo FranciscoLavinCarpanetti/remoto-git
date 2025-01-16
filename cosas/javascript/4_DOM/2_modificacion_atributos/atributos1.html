@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificacion de atributos</title>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a href="https://www.amazon.es">Amazon</a></li>
+        <li><a href="https://www.ebay.es">Ebay</a></li>
+    </ul>
+
+
+    <script>
+
+        const enlaces = document.querySelectorAll('ul li a');
+        enlaces[0].href = 'https://www.estudioclandestino.es'
+        enlaces[0].title = 'donde trabaja el mejor profe del mundo.'
+        enlaces[0].target = '_black'
+
+    </script>
+
+</body>
+
+</html>

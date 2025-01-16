@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-color: rgba(0, 128, 0, 0.651);
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    text-align: center;
+}
+.header2 {
+    position: sticky;
+    background-color: rgba(0, 128, 0, 0.651);
+    top: 0;
+    left: 0;
+
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones anonimas o expresivas</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        // funcion anonima es anonima por que no tiene nombre. Tambien se conocen como expresivas
+
+        //declarativa
+        sumar(1, 2)
+        function sumar(n1, n2) {
+            let resultado = n1 + n2
+            console.log(resultado)
+        }
+
+        // expresiva o anonima, se crearon para evitar el hoisting
+
+        const sumita = function (n1, n2) {
+            let resultado = n1 + n2;
+            return resultado;
+        }
+
+        let resultado = sumita(12, 7)
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

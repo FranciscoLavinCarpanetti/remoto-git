@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // documentacion de array en javascript https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+        //Reduce Este metodo se usa para reducir una array a unica expresion.
+
+        const precios = [1, 2, 23, 4, 5, 6, 3, 35, 6, 7, 8];
+
+        let total = precios.reduce((acumulador, valorActual) => acumulador + valorActual)
+
+
+        const abcedario = ['a', 'b', 'c', 'd', 'f']
+        let texto = abcedario.reduce((ac, letraActual) => ac + letraActual)
+        console.log(texto)
+
+        const listaCompra = [
+            { title: 'leche', price: 2, cantidad: 7 },
+            { title: 'pan', price: 0.25, cantidad: 2 },
+            { title: 'huevos', price: 6, cantidad: 2 },
+            { title: 'carne', price: 12.5, cantidad: 1 },
+            { title: 'pescado', price: 7, cantidad: 3 },
+        ]
+
+        let costeTotalLista = listaCompra.reduce((ac, producto) => ac + (producto.price * producto.cantidad), 0)
+        console.log(costeTotalLista)
+
+
+    </script>
+
+</body>
+
+</html>

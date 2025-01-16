@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // pedir un numero por pantalla y sacar el factorial de ese numero.
+
+        // 5 =>  5 * 4 * 3 * 2 * 1 = 120
+
+        // paso 1: pedir numero por pantalla
+        // paso 2: contar desde ese numero hasta 1
+        // paso 3: guardar el resultado de multiplicar dichos numeros
+        // paso 4: sacar el resultado por consola
+
+        var numero = Number(prompt('Dime un numero'))
+        var resultado = 1;
+
+        for (var i = numero; i >= 1; i--) {
+            resultado = resultado * i
+        }
+
+        console.log(resultado);
+    </script>
+</body>
+
+</html>

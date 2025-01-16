@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Selectores</title>
+
+    <!-- En la etiqueta style escribimos las reglas de CSS-->
+    <style>
+      /*El selector de clases es el punto "." */
+
+      .colorRojo {
+        color: red;
+      }
+
+      .tamaño {
+        width: 450px;
+        height: 250px;
+      }
+      /*Selectores de id se aplican con la almohadilla # */
+
+      #encabezado1 {
+        font-size: 20px;
+      }
+
+      #div1 {
+        background-color: aqua;
+      }
+      #div2 {
+        background-color: chartreuse;
+        width: 225px;
+        height: 125px;
+      }
+      /*Selector global que se usa con el nombre del elemento html */
+
+      /*Los selectores se pueden agrupar separados por comas "," permitiendo que selecciones mas de un elemento a la vez y aplicandoles las mismas reglas de CSS */
+      h1,
+      h2 {
+        border: 2px solid black;
+        margin: 0;
+      }
+
+      body {
+        background-color: blue;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="encabezado1" class="colorRojo">Mi encabezado</h1>
+    <h2 id="encabezado2" class="colorRojo">ESTE ES MI ENCABEZADO 2</h2>
+    <div id="div1" class="tamaño">
+      <div id="div2" class="tamaño"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+
+.fondo-imagen {
+    background-image: url("./images/cesta.jpg");
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+
+}
+
+.tamano-caja {
+    width: 550px;
+    height: 300px;
+    overflow:scroll;
+}
+
+ /* conceptos importante: selectores */
+
+        /* partes del codigo CSS */
+        html  /* primera parte : Selector */ 
+        {
+        /* segunda parte: contenido */
+        /* tercera parte : Propiedad */
+            scroll-behavior: smooth;   
+        /* cuarta parte : Valor */
+
+        }
+
+        /* selectores globales */
+        body {
+            background-color: rgb(0, 106, 111);
+            color: #ffffff;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            color: red;
+        }
+        section{
+            
+        }
+
+        /* selectores de clase */
+
+        .clase1{
+
+            font-size: 48px;
+        }
+
+        .letra-grande {
+            font-size:  60px;
+        }
+        
+        .color-rosa {
+            color: pink;
+        }
+
+        /* selectores de ID */
+        #color-amarillo {
+            color: yellow;
+        }
+        #primerParrafo {
+            color: blue;
+        }

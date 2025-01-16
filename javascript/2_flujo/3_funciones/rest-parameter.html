@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones de parametros indefinidos</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // Rest-paremeter. Le puedo pasar la cantidad de parametros que yo quiera y el los transforma en un array. (...) transforma los parametros en un array.
+
+
+        //un array se numera de 0 a n-1 siendo n la longitud de array
+
+        function sumar(...numeros) {
+            let suma = 0;
+            for (let i = 0; i < numeros.length; i++) {
+                suma += numeros[i]
+            }
+            console.log(suma)
+        }
+
+
+        sumar(1, 2, 3)
+        sumar(12, 43, 45, 5)
+        sumar(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
+
+
+
+    </script>
+
+
+</body>
+
+</html>
