@@ -1,0 +1,1 @@
+const tupla: [number, string, boolean] = [1, 'Francisco', true];
