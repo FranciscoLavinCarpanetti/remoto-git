@@ -7,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrl: './contador.component.css'
 })
 export class ContadorComponent {
+  contador: number = 1;
+
+  aumentar() {
+    if (this.contador < 20)
+      this.contador++;
+  }
+
+  disminuir() {
+    if (this.contador > 0) {
+      this.contador--;
+    }
+  }
+
+
 
 }

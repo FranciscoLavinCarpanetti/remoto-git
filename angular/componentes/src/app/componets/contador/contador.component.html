@@ -1,6 +1,5 @@
-<p>contador works!</p>
-<div class="contador">
-    <span>1</span>
-    <button>+</button>
-    <button>-</button>
+<div class="contador grid">
+    <span>{{contador}}</span>
+    <button (click)="aumentar()">+</button>
+    <button (click)="disminuir()">-</button>
 </div>
