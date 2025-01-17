@@ -7,18 +7,40 @@ import { Component } from '@angular/core';
   styleUrl: './contador.component.css'
 })
 export class ContadorComponent {
-  contador: number = 1;
+  contador: number = 0;
+  color: string = 'gray';
+  plus: boolean = true;
+  minus: boolean = true;
 
-  aumentar() {
-    if (this.contador < 20)
-      this.contador++;
-  }
-
-  disminuir() {
-    if (this.contador > 0) {
-      this.contador--;
+  cambairColor(numero: number) {
+    if (numero > 0) {
+      this.color = 'green';
+    }
+    else if (numero < 0) {
+      this.color = 'tomato';
+    }
+    else {
+      this.color = 'gray';
     }
   }
+  aumentar() {
+    this.minus = false;
+    if (this.contador < 20) {
+      this.contador++;
+      this.cambairColor(this.contador);
+    }
+
+  }
+
+
+  disminuir() {
+    this.plus = false;
+    if (this.contador > -20) {
+      this.contador--;
+      this.cambairColor(this.contador);
+    }
+  }
+
 
 
 

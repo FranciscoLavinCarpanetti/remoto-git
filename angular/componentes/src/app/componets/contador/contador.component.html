@@ -1,5 +1,5 @@
-<div class="contador grid">
+<div class="contador" [style.background-color]="color">
     <span>{{contador}}</span>
-    <button (click)="aumentar()">+</button>
-    <button (click)="disminuir()">-</button>
+    <button [disable]="plus"(click)="aumentar()">+</button>
+    <button [disable]="minus"(click)="disminuir()">-</button>
 </div>
