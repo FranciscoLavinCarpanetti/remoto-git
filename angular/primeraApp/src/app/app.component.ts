@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,26 +8,31 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 
-  nombre: string = 'Francisco Javier';
-  apellido: string = 'Lavin Carpanetti';
-  url: string = 'https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-09Bulldog2.jpg?itok=i-myMuFd';
-  title: string = `me llam ${this.nombre}`;
-  job: string = '';
-  color: string = 'tomato';
-  numero: string = 6;
+  nombre: string = 'Lucia';
+  apellido: string = 'Pérez'
+  url: string = "https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/15665/production/_107435678_perro1.jpg.webp"
+  title: string = `me llamo ${this.nombre}`;
+  job: string = "";
+  color: string = 'tomato'
+  numero: number = 0;
 
   usuario: any = {
     nombre: 'Pepe',
-    apellido: 'Villuela',
+    apellidos: 'Villuela',
     edad: 67,
-    email: 'pep@gmail.com'
+    email: 'pepe@gmail.com'
   }
 
 
-  onclick(tocado: string) {
-    alert('Hola mundo' + tocado);
+  escribirTexto(): string {
+    let texto = `En un lugar de la mancha donde vive ${this.usuario.nombre} y que tiene la edad de ${this.usuario.edad}`
+
+    return texto;
   }
 
+  onclick(texto: string) {
+    alert('tocado ' + texto)
+  }
 
   capturarJob(event: any) {
     this.job = event.target.value;
@@ -36,10 +40,9 @@ export class AppComponent {
 
   cambiarColor(event: any): void {
     this.color = event.target.value;
-
   }
 
-  cambiarNumero(event: any) {
+  cambiarNumero(event: any): void {
     this.numero = event.target.value;
   }
 }
