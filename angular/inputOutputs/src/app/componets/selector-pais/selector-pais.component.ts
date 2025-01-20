@@ -1,4 +1,4 @@
-import { Component, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-selector-pais',
@@ -7,10 +7,11 @@ import { Component, Output } from '@angular/core';
   styleUrl: './selector-pais.component.css'
 })
 export class SelectorPaisComponent {
-  @Output() paisEnviado = new EventEmitter<string> = new EventEmitter();
+  @Output() paisEnviado: EventEmitter<string> = new EventEmitter();
 
   cargarPais(event: any) {
     let pais: string = event.target.value;
-    this.paisEnviado.emit(pais);
+    //emitir el pais que recogido al padre
+    this.paisEnviado.emit(pais)
   }
 }

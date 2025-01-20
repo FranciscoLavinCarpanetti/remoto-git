@@ -8,11 +8,14 @@ import { Component, Input } from '@angular/core';
 })
 export class FotoComponent {
   @Input() miFoto: any;
-  url: string = 'https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-09Bulldog2.jpg?itok=i-myMuFd';
-  title: string = 'mi perro';
-  ngOnInit() {
-    this.url = this.miFoto.imageUrl;
-    this.title = this.miFoto.title;
+  url: string = 'https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/15665/production/_107435678_perro1.jpg.webp';
+  title: string = 'Mi perrito pug';
 
+  ngOnInit() {
+    this.url = this.miFoto.url
+    this.title = this.miFoto.title
   }
+
+
+
 }

@@ -7,15 +7,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './boton-color.component.css'
 })
 export class BotonColorComponent {
-  @Output() colorEnviado: EventEmitter<string> = new EventEmitter()
-  numero: string = '';
-
-
-
-
+  // un Output tiene 4 pasos
+  // 1 parte del output inicializar la variable decorada con @Output
+  @Output() colorEnviado: EventEmitter<string> = new EventEmitter();
+  numero: string = ""
 
   cargarColor(color: string): void {
-
-    this.colorEnviado.emit(color);
+    //cuando tengo el valor que quiero enviar al componente padre
+    //2 emitir un evento hacia el padre.
+    this.colorEnviado.emit(color)
   }
+
 }

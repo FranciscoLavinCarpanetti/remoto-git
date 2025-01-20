@@ -1,8 +1,8 @@
-import { SelectorPaisComponent } from './componets/selector-pais/selector-pais.component';
 import { Component } from '@angular/core';
 import { CronometroComponent } from "./components/cronometro/cronometro.component";
-import { FotoComponent } from './componets/foto/foto.component';
-import { BotonColorComponent } from './componets/boton-color/boton-color.component';
+import { FotoComponent } from "./components/foto/foto.component";
+import { BotonColorComponent } from "./components/boton-color/boton-color.component";
+import { SelectorPaisComponent } from "./components/selector-pais/selector-pais.component";
 
 @Component({
   selector: 'app-root',
@@ -11,20 +11,34 @@ import { BotonColorComponent } from './componets/boton-color/boton-color.compone
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  pais: string = "pais";
+  capital: string = "capital";
   title = 'inputOutputs';
   numero = 234;
   arrayFotos: any = [
-    { title: 'Perro hermoso', imageUrl: 'https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-09Bulldog2.jpg?itok=i-myMuFd' },
-    { title: ' perro de colores', imageUrl: 'https://static.wixstatic.com/media/34e812_60937fee545845e2bb2cf90dee76d484~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_85,usm_0.66_1.00_0.01/34e812_60937fee545845e2bb2cf90dee76d484~mv2.jpg' },
-    { title: 'posibilidad 2', imageUrl: 'https://static01.nyt.com/images/2018/03/18/fashion/16frenchie/16frenchie-videoSixteenByNine3000.jpg?year=2018&h=1688&w=3000&s=86a278cc344505454a4edd22ab4362591c04a574bc8f82efea4e48c2ce7216fc&k=ZQJBKqZ0VN&tw=1' }
-
+    { title: 'el gato gargamel', url: 'https://i.pinimg.com/736x/4c/c2/2e/4cc22ed1b753685ac4be9f50c5851ae2.jpg' },
+    { title: 'el perrito pug', url: 'https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/15665/production/_107435678_perro1.jpg.webp' },
+    { title: 'El caballo blanco de santiago', url: 'https://www.eldiarioweb.com/wp-content/uploads/2023/09/contratapa-4-711x400.jpg' },
   ]
+  arrayPaises: any = [
+    { pais: 'españa', capital: 'madrid' },
+    { pais: 'francia', capital: 'paris' },
+    { pais: 'alemania', capital: 'berlin' }
+  ]
+  color: string = "";
 
-  /**cambiarColor(event: string) {
-    this.color = event;
-  }*/
+  cambiarColor(event: string) {
+    this.color = event
+  }
 
   pintarPais(event: string) {
-    console.log(event);
+    // recoger la capital del pais que me ha llegado del hijo.
+    if (event !== "") {
+      let paisBuscado = this.arrayPaises.find((country: any) => country.pais === event)
+      this.pais = paisBuscado.pais;
+      this.capital = paisBuscado.capital;
+    } else {
+      alert('es obligatorio seleccionar un pais')
+    }
   }
 }
