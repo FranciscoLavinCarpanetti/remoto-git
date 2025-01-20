@@ -1,0 +1,32 @@
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.foto{
+    
+    position: relative;
+    max-width: 400px;
+    overflow: hidden;
+box-shadow: ;
+
+    figcaption{
+        position: absolute;
+        bottom: 0px ;
+        left: 0px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: 10px;
+        color: white;
+        transform: rotateY(50px);
+    }
+}
