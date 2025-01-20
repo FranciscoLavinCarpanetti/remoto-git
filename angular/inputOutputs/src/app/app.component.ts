@@ -1,10 +1,12 @@
+import { SelectorPaisComponent } from './componets/selector-pais/selector-pais.component';
 import { Component } from '@angular/core';
 import { CronometroComponent } from "./components/cronometro/cronometro.component";
 import { FotoComponent } from './componets/foto/foto.component';
+import { BotonColorComponent } from './componets/boton-color/boton-color.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CronometroComponent, FotoComponent],
+  imports: [CronometroComponent, FotoComponent, BotonColorComponent, SelectorPaisComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,4 +19,12 @@ export class AppComponent {
     { title: 'posibilidad 2', imageUrl: 'https://static01.nyt.com/images/2018/03/18/fashion/16frenchie/16frenchie-videoSixteenByNine3000.jpg?year=2018&h=1688&w=3000&s=86a278cc344505454a4edd22ab4362591c04a574bc8f82efea4e48c2ce7216fc&k=ZQJBKqZ0VN&tw=1' }
 
   ]
+
+  /**cambiarColor(event: string) {
+    this.color = event;
+  }*/
+
+  pintarPais(event: string) {
+    console.log(event);
+  }
 }
