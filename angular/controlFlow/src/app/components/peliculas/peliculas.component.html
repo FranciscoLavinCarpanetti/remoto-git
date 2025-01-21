@@ -1,11 +1,20 @@
-<p>peliculas works!</p>
+<section class="peliculas">
+  <h2>Listado de peliculas</h2>
+  <hr>
+  <select (change)="obtenerCategory($event)">
+    <option value="">Selecciona una categoria</option>
+    <option value="terror">Terror</option>
+    <option value="accion">Acción</option>
+    <option value="comedia">Comedia</option>
+    <option value="romance">Romance</option>
+  </select>
 
-<section class="pelicula">
-    <H2>Listado peliculas</H2>
-    <div class="grid">
-        @for(pelicula of arrPeliculas; track pelicula.id){
+  <div class="grid">
+    @for(pelicula of arrPeliculas; track pelicula.id){
+    <app-pelicula [miPelicula]="pelicula"></app-pelicula>
+    }@empty {
+    <p>NO HAY PELICULAS</p>
+    }
 
-            <app-pelicula [miPelicula]="pelicula"></app-pelicula>
-        }
-    </div>
+  </div>
 </section>

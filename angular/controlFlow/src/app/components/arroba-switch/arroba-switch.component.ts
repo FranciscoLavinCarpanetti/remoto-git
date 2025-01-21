@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './arroba-switch.component.css'
 })
 export class ArrobaSwitchComponent {
+  roleActual: string = "suscriptor";
 
+  getRole(role: string): void {
+    this.roleActual = role;
+  }
 }

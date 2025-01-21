@@ -1,4 +1,5 @@
-import { Component, Input, } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { IPelicula } from '../../../interfaces/ipelicula.interface';
 
 @Component({
   selector: 'app-pelicula',
@@ -8,5 +9,4 @@ import { Component, Input, } from '@angular/core';
 })
 export class PeliculaComponent {
   @Input() miPelicula!: IPelicula;
-
 }

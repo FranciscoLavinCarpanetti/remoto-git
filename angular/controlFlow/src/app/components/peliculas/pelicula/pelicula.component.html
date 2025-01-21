@@ -1,9 +1,8 @@
-<p>pelicula works!</p>
 <article class="pelicula">
-    <figure>
-        <img [src]="miPelicula" alt="Pelicula">
-    </figure>
-    <h3>Peliculas</h3>
-    <p>Director</p>
-    <p>Categoria</p>
+  <figure>
+    <img [src]="miPelicula.poster" [alt]="miPelicula.title">
+  </figure>
+  <h3>{{ miPelicula.title }}</h3>
+  <p>Director: {{miPelicula.director}}</p>
+  <p>Categoria: {{miPelicula.category}}</p>
 </article>

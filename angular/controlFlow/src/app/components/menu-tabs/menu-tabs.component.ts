@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './menu-tabs.component.css'
 })
 export class MenuTabsComponent {
-  currentCity: string = 'Lodon';
-
+  currentCity: string = "london";
 
   cambiarCiudad(ciudad: string) {
     this.currentCity = ciudad;

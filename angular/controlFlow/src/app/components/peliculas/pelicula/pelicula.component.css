@@ -1,8 +1,13 @@
-article{
-    border: 2px solid #000;
-    border-radius: 30px;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 2px 2px;
-   
+article {
+  box-shadow: 2px 2px 4px gray;
+  border: 2px solid gray;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+}
+
+figure img {
+  height: 470px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }

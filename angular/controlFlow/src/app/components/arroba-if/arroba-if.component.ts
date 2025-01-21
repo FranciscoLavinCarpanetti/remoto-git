@@ -8,18 +8,16 @@ import { Component } from '@angular/core';
 })
 export class ArrobaIfComponent {
   visible: boolean = false;
-  texto: string = "mostar";
-  edad: number = 36;
+  texto: string = 'mostrar';
+  edad: number = -1;
 
-  mostar() {
+  mostrar() {
     this.texto = this.visible ? "mostrar" : "ocultar";
     this.visible = !this.visible;
   }
-  upDateAge(event: any) {
+
+  updateAge(event: any) {
+    //console.log(typeof event.target.value)
     this.edad = Number(event.target.value);
   }
-
-
-
-
 }
