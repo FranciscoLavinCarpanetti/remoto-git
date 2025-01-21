@@ -1,4 +1,4 @@
-export interface IPeliculas {
+export interface IPelicula {
     id: number;
     title: string;
     director: string;

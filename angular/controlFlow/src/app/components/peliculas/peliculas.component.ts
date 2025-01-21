@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IPelicula } from '../../interface/ipelicula.interface';
 
 @Component({
   selector: 'app-peliculas',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './peliculas.component.css'
 })
 export class PeliculasComponent {
-  arrPeliculas: any[] = [
+  arrPeliculas: IPelicula[] = [
     {
       "id": 1,
       "title": "Haunted Shadows",

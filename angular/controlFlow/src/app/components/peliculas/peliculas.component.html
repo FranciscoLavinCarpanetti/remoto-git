@@ -1,30 +1,11 @@
 <p>peliculas works!</p>
 
-<section id="pelicula">
-    <article>
-        <figure>
-            <img src="https://m.media-amazon.com/images/I/712B-Xe2HVL._AC_UF894,1000_QL80_.jpg" alt="Pelicula">
-        </figure>
-        <h2>Peliculas</h2>
-        <h3>Director</h3>
-        <p>Categoria</p>
-    </article>
+<section class="pelicula">
+    <H2>Listado peliculas</H2>
+    <div class="grid">
+        @for(pelicula of arrPeliculas; track pelicula.id){
 
-    <article>
-        <figure>
-            <img src="https://m.media-amazon.com/images/I/712B-Xe2HVL._AC_UF894,1000_QL80_.jpg" alt="Pelicula">
-        </figure>
-        <h2>Peliculas</h2>
-        <h3>Director</h3>
-        <p>Categoria</p>
-    </article>
-
-    <article>
-        <figure>
-            <img src="https://m.media-amazon.com/images/I/712B-Xe2HVL._AC_UF894,1000_QL80_.jpg" alt="Pelicula">
-        </figure>
-        <h2>Peliculas</h2>
-        <h3>Director</h3>
-        <p>Categoria</p>
-    </article>
+            <app-pelicula [miPelicula]="pelicula"></app-pelicula>
+        }
+    </div>
 </section>
