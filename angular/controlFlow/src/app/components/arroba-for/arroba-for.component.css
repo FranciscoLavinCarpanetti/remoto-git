@@ -1,0 +1,9 @@
+.par {
+    background-color: beige;
+    padding: 10px;
+}
+
+.impar{
+    background-color: lightblue;
+    padding: 10px;
+}

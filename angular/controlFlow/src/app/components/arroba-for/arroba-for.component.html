@@ -1,0 +1,22 @@
+<p>arroba-for works!</p>
+
+<p>Nombre - 0303456</p>
+<section id="contacto">
+    @for(contact of arrContactos; track contact.id; let i=$index; let primero=$first; let ultimo=$last; let par=$even; let impar=$odd){
+    <article [class.par]="par" [class.impar]="impar">
+        <h3>{{contact.name}}</h3>
+        <p>posicion: {{i}}</p>
+        <p>primero: {{primero}}</p>
+        <p>ultimo: {{ultimo}}</p>
+        <p>par: {{par}}</p>
+        <p>impar: {{impar}}</p>
+        <p>{{contact.phone}}</p>
+    </article>}@empty {No hay contactos}
+</section>
+<section id="numeros">
+    <ul>
+        @for(numero of arrNumeros; track numero; let i=$index){
+        <li>{{i}} - {{numero}}</li>}
+    </ul>
+
+</section>

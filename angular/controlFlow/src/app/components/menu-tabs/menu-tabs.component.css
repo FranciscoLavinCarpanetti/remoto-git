@@ -1,0 +1,19 @@
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+li{
+    background-color: aqua;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.activo {
+    background-color: rgb(155, 24, 24);
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
