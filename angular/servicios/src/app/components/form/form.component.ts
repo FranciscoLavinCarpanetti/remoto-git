@@ -11,11 +11,14 @@ import { FormsModule } from '@angular/forms';
 export class FormComponent {
 
   nuevoContact: IContact = {
-    name: '',
-    email: '',
-    phone: ''
-  };
+    name: string = '',
+    phone: string = '',
+  }
+  lakalkkkak j
 
+  ud`D
+  d
+  
 
   capturarDatos() {
     console.log(this.nuevoContact);
