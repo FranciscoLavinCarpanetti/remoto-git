@@ -1,1 +1,5 @@
-<p>lista-contactos works!</p>
+
+
+@for (contacto of listaContactos; track $index) {
+    <app-contacto [miContacto]="contacto"></app-contacto>
+}
