@@ -1,0 +1,30 @@
+header{
+background-color: black;
+padding: 20px;
+color: white;
+font-size: 200%;
+text-align: center ;
+border-bottom: 4px solid var(--color-primary);
+}
+footer{
+    background-color: black;
+    color: white   ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+.flex {
+    display: flex;
+    justify-content: column;
+   section {
+    width: 100%;
+    padding: 20px;
+   } 
+}
+@media (min-width: 800px) {
+    .flex {
+        justify-content: row;
+        
+    }
+}
