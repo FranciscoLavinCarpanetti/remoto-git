@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
-import { IContact } from '../../interfaces/icontact.type=interface';
+import { IContacto } from '../../interfaces/icontacto.interface';
 import { ContactosService } from '../../services/contactos.service';
 import { ContactoComponent } from '../contacto/contacto.component';
+
 
 @Component({
   selector: 'app-lista-contactos',
@@ -10,18 +11,14 @@ import { ContactoComponent } from '../contacto/contacto.component';
   styleUrl: './lista-contactos.component.css'
 })
 export class ListaContactosComponent {
-  listaContactos: IContact[] = [];
+  listaContactos: IContacto[] = []
+  //para inyectar una dependencia usamos la funcion inject()
   contactosService = inject(ContactosService)
 
   ngOnInit() {
-    this.listaContactos = this.contactosService.getAll();
+    //cuando todo el componente este cargado quiero llenar mi array de datos del servicio.
+    this.listaContactos = this.contactosService.getAll()
+    console.log(this.listaContactos);
   }
-
-
-
-
-
-
-
 
 }

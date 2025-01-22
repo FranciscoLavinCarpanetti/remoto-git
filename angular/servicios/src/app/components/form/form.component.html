@@ -1,15 +1,10 @@
-<p>form works!</p>
+<div>
+  <label for="name">Nombre</label>
+  <input type="text" id="name" placeholder="introduce tu nombre" [(ngModel)]="nuevoContacto.name">
+</div>
 
 <div>
-    <label for="name">Nombre</label>
-    <input type="text" id="" placeholder="Introcuce su nombre">
-    </div>
-    <div>
-        
-    
-    <label for="phone">Telefono</label>
-    <input type="text" id="" placeholder="Introcuce su apellido">
+  <label for="phone">Telefono</label>
+  <input type="text" id="phone" placeholder="introduce tu telefono" [(ngModel)]="nuevoContacto.phone">
 </div>
-
-
-</div>
+<button (click)="capturarDatos()">Guardar</button>

@@ -1,5 +1,3 @@
-
-
-@for (contacto of listaContactos; track $index) {
-    <app-contacto [miContacto]="contacto"></app-contacto>
+@for( contacto of listaContactos; track contacto.id ){
+<app-contacto [miContacto]="contacto"></app-contacto>
 }

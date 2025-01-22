@@ -1,5 +1,4 @@
-:root{
-    --color-primary: tomato;
-    --color-secondary: #333;
-    --font: 'Arial', sans-serif;
+:root {
+  --color-primary: tomato;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

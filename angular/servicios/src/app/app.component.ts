@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { FormComponent } from "./components/form/form.component";
-import { ListaContactosComponent } from './components/lista-contactos/lista-contactos.component';
-
+import { ListaContactosComponent } from "./components/lista-contactos/lista-contactos.component";
+import { FormComponent } from './components/form/form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [FormComponent, ListaContactosComponent],
+  imports: [ListaContactosComponent, FormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
