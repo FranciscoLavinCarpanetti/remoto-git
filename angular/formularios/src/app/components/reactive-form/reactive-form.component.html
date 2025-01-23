@@ -1,0 +1,43 @@
+<form [formGroup]="formModel" (ngSubmit)="getDataForm()">
+
+<div>
+    <label class="form-label" for="nombre">Nombre</label>
+    <input class="form-control" type="text" name="nombre" id="" formControlName="nombre">
+</div>
+<div>
+    <label class="form-label" for="email">Email</label>
+    <input class="form-control" type="text" name="email" id="" formControlName="email">
+</div>
+
+<div>
+    <label class="form-label" for="edad">Edad</label>
+    <input class="form-control" type="number" name="edad" id="" formControlName="edad">
+</div>
+<div>
+    <label class="form-label" for="dni">Dni</label>
+    <input class="form-control" type="number" name="dni" id="" formControlName="dni">
+</div>
+<div>
+    <label for="prfesion"></label>
+    <select name="" id="">
+        <option value="">Selecciona una profesion</option>
+        <option value="desarrollador">Desarrollador</option>
+        <option value="marketing">Marketing</option>
+        <option value="contable">Contable</option>
+        <option value="UX-UX">UX-UX</option>
+        
+    </select>
+    
+</div>
+<div>
+    <label class="form-label" for="password">Password</label>
+    <input class="form-control" type="password" name="password" id="" formControlName="password">
+</div>
+
+<div>
+    <input type="submit" value="Enviar" class="btn btn-primary">
+</div>
+
+
+
+</form>
