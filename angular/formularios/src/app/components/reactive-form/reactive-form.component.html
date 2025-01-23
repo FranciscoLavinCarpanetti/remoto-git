@@ -1,8 +1,21 @@
-<form [formGroup]="formModel" (ngSubmit)="getDataForm()">
+
+<h1>{{formModel.valid}}</h1>
+
+
+
+
+<form [formGroup]="formModel" (ngSubmit)="geetDataForm()">
 
 <div>
     <label class="form-label" for="nombre">Nombre</label>
     <input class="form-control" type="text" name="nombre" id="" formControlName="nombre">
+   
+     @if(formModel.get('nombre')?.hasError && formModel.get('nombre').touched){
+        <p class="error">el campo es obligatorio</p>
+    }@if(formModel.get('nombre')?.hasError && formModel.get('nombre').touched){
+        <p class="error">el campo es obligatorio</p>
+    }
+
 </div>
 <div>
     <label class="form-label" for="email">Email</label>
@@ -35,7 +48,7 @@
 </div>
 
 <div>
-    <input type="submit" value="Enviar" class="btn btn-primary">
+    <input type="submit" [disable]="formModel.invalid" value="Enviar" class="btn btn-primary">
 </div>
 
 
