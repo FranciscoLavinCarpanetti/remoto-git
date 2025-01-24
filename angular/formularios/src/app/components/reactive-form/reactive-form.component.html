@@ -62,12 +62,15 @@
     <label class="form-label" for="password">Password</label>
     <input class="form-control" type="password" id="password" formControlName="password"
       placeholder="introduce tu password">
-  </div>
+      @if(checkErrorField('password', 'required')){
+        <p class="error">La longitud minima es de 8 caracteres</p>
+        }
 
   <div>
     <label class="form-label" for="repitepassword">repitepassword</label>
     <input class="form-control" type="password" id="repitepassword" formControlName="repitepassword"
       placeholder="repite el password">
+      @if(formModel.hasError)
   </div>
   <div>
     <input type="submit" value="Enviar" class="btn btn-danger mt-3" [disabled]="formModel.invalid">

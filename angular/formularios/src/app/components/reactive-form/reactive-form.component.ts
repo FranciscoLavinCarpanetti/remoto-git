@@ -29,7 +29,10 @@ export class ReactiveFormComponent {
         this.dniValidator
       ]),
       profesion: new FormControl("", []),
-      password: new FormControl("", []),
+      password: new FormControl("", [
+        Validators.required,
+        Validators.minLength(8)
+      ]),
       repitepassword: new FormControl("", []),
     }, [this.passwordValidator])
   }
@@ -37,7 +40,6 @@ export class ReactiveFormComponent {
   passwordValidator(formFields: AbstractControl): any {
     let password = formFields.get('password')?.value;
     let repitepassword = formFields.get('repitepassword')?.value;
-    console.log(password, repitepassword)
     return (password !== repitepassword) ? { 'passwordvalidator': true } : null;
   }
 
