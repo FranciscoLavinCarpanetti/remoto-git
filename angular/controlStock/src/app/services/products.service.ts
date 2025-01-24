@@ -21,8 +21,10 @@ export class ProductsService {
       return { message: "Producto actualizado correctamente" };
     }
 
+  }
 
-
+  getAll(): IProduct[] {
+    return this.arrProductos;
   }
 
 
